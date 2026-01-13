@@ -13,12 +13,14 @@ drop.el.position.y = -10;
 dropSection.add(drop.el);
 
 var text = new TextPanel(
-  'F  R  O  M \n A N   I D E A',
+  'I  A M \nS H O U N A K  S O B A H A N I\n S E N I O R  U N I T Y  D E V E L O P E R  &  T E A M  L E A D',
   {
-    align: 'right',
-    style: '',
+    align: 'left',
+    padding: '20',
+    style: 'bold',
     size: 50,
     lineSpacing: 40
+    
   }
 );
 text.el.position.set(-10, 8, 0);

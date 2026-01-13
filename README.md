@@ -49,3 +49,15 @@ $ gulp serve
 ```
 
 Go to `localhost:8000`.
+
+
+npm install -g bower
+bower -v
+$env:Path += ";" + (npm bin -g)
+bower -v
+
+npm install
+bower install
+gulp build
+gulp bundle
+gulp serve

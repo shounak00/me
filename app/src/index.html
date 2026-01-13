@@ -2,9 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title> Hello I'm V </title>
-  <link rel="image_src" href="http://vaalentin.github.io/2015/app/public/img/preview.jpg" />
-  <meta name="description" content="A french Creative / Front end developer who loves to experiment, iterate and build premium experiences." />
+  <title>🌀 Shounak Sobahani</title>
+
+  <link rel="image_src" href="./app/public/img/preview.jpg" />
+  <meta name="description" content="Senior Unity Developer & Team Lead. Medical Simulation • Digital Twins • XR (VR/AR) • ECS/DOTS • Simulation Authoring • Workflow Automation • Games." />
+
   <link rel="apple-touch-icon" sizes="57x57" href="./app/public/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="./app/public/favicons/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./app/public/favicons/apple-touch-icon-72x72.png">
@@ -23,6 +25,7 @@
   <meta name="msapplication-TileImage" content="./app/public/favicons/mstile-144x144.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
   <div class="loader">
     <h3 class="text--center text--white loader__title is-active"> LOADING </h3>
@@ -36,8 +39,7 @@
       /* jshint strict: false */
       /* jshint laxbreak: true */
 
-      // disable console
-      console.log('That\'s probably what you\'re looking for! https://github.com/vaalentin/2015');
+      console.log('That\'s probably what you\'re looking for! https://github.com/shounak00');
 
       if (!window.console) { window.console = {}; }
       var methods = ['log', 'debug', 'warn', 'info'];
@@ -45,7 +47,6 @@
         console[methods[i]] = function () {};
       }
 
-      // features
       function mobile () {
         return navigator.userAgent.match(/Android/i)
           || navigator.userAgent.match(/webOS/i)
@@ -58,7 +59,7 @@
 
       function webGL () {
         try {
-          var canvas = document.createElement('canvas'); 
+          var canvas = document.createElement('canvas');
           return !! window.WebGLRenderingContext
             && (canvas.getContext('webgl')
             || canvas.getContext('experimental-webgl'));
@@ -187,7 +188,7 @@
         <div class="menu__items">
           <a class="menu__item menu__items--3D" data-button="sounds"> MUTE </a>
           <a class="menu__item menu__items--3D" data-button="help"> HELP </a>
-          <a class="menu__item placeholder--email"> CONTACT </a>
+          <a class="menu__item" href="./app/src/contact.html"> CONTACT </a>
           <a class="menu__item menu__items--3D" data-button="quality"> QUALITY 0.5 </a>
         </div>
       </div>
@@ -216,16 +217,19 @@
       </div>
 
       <div class="heads__sections">
+        <!-- HELLO -->
         <div class="heads__section heads__section--hello">
           <div class="part part--title hello__title">
             <h1 class="text--white text--noMargin"> HELLO </h1>
-            <h1 class="text--white text--noMargin"> <span class="placeholder--agency placeholder--agency--capital"></span> </h1>
+            <h1 class="text--white text--noMargin"> Shounak Sobahani </h1>
+            <h2 class="text--white text--noMargin"> Senior Unity Developer &amp; Team Lead </h2>
           </div>
           <div class="part part--smoke"
               data-0="transform:translate3d(0px, 0px, 0px)"
               data-800="transform:translate3d(0px, -300px, 0px)"></div>
         </div>
 
+        <!-- BEAMS -->
         <div class="heads__section heads__section--beams">
           <div class="part part--beam--left"
               data-100="transform:translate3d(0px, 120px, 0px); opacity:0"
@@ -241,25 +245,32 @@
               data-1700="transform:translate3d(0px, -50px, 0px)"></div>
         </div>
 
+        <!-- FROM / AN IDEA -> SS TEXT (2 lines) -->
         <div class="heads__section heads__section--drop">
           <div class="part part--title drop__title"
               data-1200="opacity:0"
               data-1500="opacity:1">
-            <h1 class="text--white text--right text--noMargin"> FROM </h1>
-            <h1 class="text--white text--right text--noMargin"> AN IDEA </h1>
-            </h1>
+            <h1 class="text--white text--right text--noMargin"> MEDICAL SIMULATION </h1>
+            <h1 class="text--white text--right text--noMargin"> &amp; GAME SYSTEMS </h1>
           </div>
           <div class="part part--drop"
               data-1000="transform:translate3d(0px, 350px, 0px); opacity:0"
               data-1700="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
+        <!-- GIVE SHAPE -> PROFESSIONAL SUMMARY (kept as H1/H2 for style compatibility) -->
         <div class="heads__section heads__section--ball">
           <div class="part part--title ball__title"
               data-1700="opacity:0"
               data-2000="opacity:1">
-            <h1 class="text--white text--noMargin text--left"> GIVE </h1>
-            <h1 class="text--white text--noMargin text--left"> SHAPE </h1>
+            <h1 class="text--white text--noMargin text--left"> PROFESSIONAL </h1>
+            <h1 class="text--white text--noMargin text--left"> SUMMARY </h1>
+            <p class="text--white" style="max-width: 520px; margin-top: 14px; line-height: 1.5;">
+              Senior Unity Developer and Team Lead with 5+ years of professional experience delivering high-performance Unity applications
+              across medical simulation, digital twins, and XR training systems. Expert in Unity ECS (DOTS), data-oriented design, and
+              simulation authoring &amp; workflow automation. Proven ability to lead engineering teams, architect scalable systems, and ship
+              enterprise healthcare solutions and consumer products with millions of users.
+            </p>
           </div>
           <div class="part part--sphere"
               data-1400="transform:translate3d(0px, -300px, 0px) rotate(60deg); opacity:0"
@@ -282,48 +293,60 @@
               data-3200="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
+        <!-- LET IT MORPH -> PROJECTS button -->
         <div class="heads__section heads__section--height">
           <div class="part part--title height__title"
               data-3500="opacity:0"
               data-3800="opacity:1">
-            <h1 class="text--white text--right text--noMargin"> LET IT </h1>
-            <h1 class="text--white text--right text--noMargin"> MORPH </h1>
+            <a href="./app/src/project.html" style="text-decoration:none;">
+              <h1 class="text--white text--right text--noMargin"> PROJECTS </h1>
+              <h1 class="text--white text--right text--noMargin"> VIEW </h1>
+            </a>
           </div>
           <div class="part part--height"
               data-3000="transform:translate3d(0px, 200px, 0px); opacity:0"
               data-4000="transform:translate3d(0px, 0px, 0px); opacity:0.5"></div>
         </div>
 
+        <!-- KEEP TRYING -> RESUME button -->
         <div class="heads__section heads__section--face">
           <div class="part part--title face__title"
             data-3800="opacity:0"
             data-5000="opacity:1">
-              <h1 class="text--white text--left text--noMargin"> KEEP </h1>
-              <h1 class="text--white text--left text--noMargin"> TRYING </h1>
+            <a href="./app/src/resume.html" style="text-decoration:none;">
+              <h1 class="text--white text--left text--noMargin"> RESUME </h1>
+              <h1 class="text--white text--left text--noMargin"> VIEW </h1>
+            </a>
           </div>
           <div class="part part--face"
               data-4000="transform:translate3d(0px, 200px, 0px); opacity:0"
               data-5500="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
+        <!-- KEEP LEARNING -> REELS button -->
         <div class="heads__section heads__section--rocks">
           <div class="part part--title rocks__title"
             data-5200="opacity:0"
             data-5800="opacity:1">
-              <h1 class="text--white text--noMargin"> KEEP </h1>
-              <h1 class="text--white text--noMargin"> LEARNING </h1>
+            <a href="./app/src/reels.html" style="text-decoration:none;">
+              <h1 class="text--white text--noMargin"> REELS </h1>
+              <h1 class="text--white text--noMargin"> WATCH </h1>
+            </a>
           </div>
           <div class="part part--rocks"
               data-5000="transform:translate3d(0px, 200px, 0px);"
               data-6000="transform:translate3d(0px, 100px, 0px);"></div>
         </div>
 
+        <!-- WORK AS A TEAM -> ARTICLES button -->
         <div class="heads__section heads__section--galaxy">
           <div class="part part--title galaxy__title"
             data-5900="opacity:0"
             data-6500="opacity:1">
-              <h1 class="text--white text--noMargin"> WORK </h1>
-              <h1 class="text--white text--noMargin"> AS A TEAM </h1>
+            <a href="./app/src/articles.html" style="text-decoration:none;">
+              <h1 class="text--white text--noMargin"> ARTICLES </h1>
+              <h1 class="text--white text--noMargin"> READ </h1>
+            </a>
           </div>
           <div class="part part--galaxy"
             data-5800="transform:translate3d(0px, -100px, 0px); opacity:0"
@@ -337,12 +360,15 @@
             ></div>
         </div>
 
+        <!-- THANKS FOR WATCHING -> CONTACT ME button -->
         <div class="heads__section heads__section--end">
           <div class="part part--title end__title"
               data-7000="opacity:0"
               data-7400="opacity:1">
-            <h1 class="text--white text--noMargin"> THANKS FOR </h1>
-            <h1 class="text--white text--noMargin"> WATCHING </h1>
+            <a href="./app/src/contact.html" style="text-decoration:none;">
+              <h1 class="text--white text--noMargin"> CONTACT </h1>
+              <h1 class="text--white text--noMargin"> ME </h1>
+            </a>
           </div>
         </div>
 
@@ -350,169 +376,45 @@
       </div>
     </div>
 
+    <!-- ABOUT ME page still exists in the "tails" part. You can edit later -->
     <div class="tails">
       <div class="tails__section tails__section--about">
-        <h1 class="tails__section__el"> HELLO <span class="placeholder--agency placeholder--agency--capital"></span> </h1>
+        <h1 class="tails__section__el"> HELLO </h1>
         <h2 class="tails__section__el text--center">
-          I'm V, a french creative / front end developer. <br/>
-          And I want to work for you.
+          Shounak Sobahani <br/>
+          Senior Unity Developer &amp; Team Lead
         </h2>
         <div class="tails__section__el">
           <p>
-            I love to experiment, iterate and build premium experiences.
+            I build high-performance Unity systems for medical simulation, digital twins, XR training, and games. I focus on ECS/DOTS, tooling, and scalable workflows.
           </p>
           <p>
-            I studied graphic design for a few years, and then started coding, at first to enrich my reflection and get a better understanding of how a project is conducted, but soon for the thrill of it.
-          </p>
-          <p>
-            After working in Shanghai for more than a year as a web developer, it's time for a change. I'm looking to work for an agency with curious, dynamic and innovative people, and I think <span class="placeholder--agency placeholder--agency--you"></span> can be the one for me.
-          </p>
-          <p>
-            To conclude, I am a hardworker with team spirit, creative, curious, and eager to learn new things.
-          </p>
-          <p>
-            I'm of course available for any questions you might have. You can contact me at valentin.marmonier@gmail.com
-          </p>
-          <div class="text--center">
-            <a class="tails__link placeholder--email"> Contact me </a>
-          </div>
-          <p>
-            Thank you in advance for your time.
-          </p>
-          <p>
-            Valentin Marmonier
+            Email: shounak00@gmail.com <br/>
+            LinkedIn: https://www.linkedin.com/in/shounak00 <br/>
+            GitHub: https://github.com/shounak00 <br/>
+            Portfolio: https://shounak00.github.io/ShounakUnity
           </p>
         </div>
       </div>
 
       <div class="tails__section tails__section--site">
         <h1 class="tails__section__el"> ABOUT THIS WEBSITE </h1>
-
-        <div class="wireframe">
-          <div class="wireframe__page">
-            <div class="wireframe__frame--left"></div>
-            <div class="wireframe__frame--right"></div>
-            <div class="wireframe__frame--top"></div>
-            <div class="wireframe__frame--bottom"></div>
-            <div class="wireframe__column wireframe__column--left">
-              <div class="wireframe__picture wireframe__picture--tall">
-                <div class="wireframe__frame--left"></div>
-                <div class="wireframe__frame--right"></div>
-                <div class="wireframe__frame--top"></div>
-                <div class="wireframe__frame--bottom"></div>
-                <div class="wireframe__controls">
-                  <div class="wireframe__controls__node"></div>
-                  <div class="wireframe__controls__node"></div>
-                  <div class="wireframe__controls__node"></div>
-                  <div class="wireframe__controls__node"></div>
-                </div>
-              </div>
-              <div class="wireframe__break"></div>
-              <div class="wireframe__picture wireframe__picture--left">
-                <div class="wireframe__frame--left"></div>
-                <div class="wireframe__frame--right"></div>
-                <div class="wireframe__frame--top"></div>
-                <div class="wireframe__frame--bottom"></div>
-              </div>
-              <div class="wireframe__text wireframe__text--right">
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line wireframe__text__line--incomplete"></div>
-              </div>
-              <div class="wireframe__break"></div>
-              <div class="wireframe__text">
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line wireframe__text__line--incomplete"></div>
-              </div>
-              <div class="wireframe__break"></div>
-              <div class="wireframe__picture wireframe__picture--right">
-                <div class="wireframe__frame--left"></div>
-                <div class="wireframe__frame--right"></div>
-                <div class="wireframe__frame--top"></div>
-                <div class="wireframe__frame--bottom"></div>
-              </div>
-              <div class="wireframe__text wireframe__text--left">
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line wireframe__text__line--incomplete"></div>
-              </div>
-            </div>
-            <div class="wireframe__column wireframe__column--right">
-              <div class="wireframe__picture">
-                <div class="wireframe__frame--left"></div>
-                <div class="wireframe__frame--right"></div>
-                <div class="wireframe__frame--top"></div>
-                <div class="wireframe__frame--bottom"></div>
-              </div>
-              <div class="wireframe__break"></div>
-              <div class="wireframe__text">
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line"></div>
-                <div class="wireframe__text__line wireframe__text__line--incomplete"></div>
-              </div>
-              <div class="wireframe__break"></div>
-              <div class="wireframe__picture wireframe__picture--tall">
-                <div class="wireframe__frame--left"></div>
-                <div class="wireframe__frame--right"></div>
-                <div class="wireframe__frame--top"></div>
-                <div class="wireframe__frame--bottom"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <p>
-          This is not really a portfolio, but my attempt at learning WebGL. <br>
-          I wanted to learn WebGL for quite some time, especially after Internet Explorer started supporting it.
+          This site is an interactive WebGL-inspired experiment. I use it as a hub for my Unity work across simulation and games.
         </p>
       </div>
 
       <div class="tails__section tails__section--skills">
         <h1 class="tails__section__el"> MY SKILLS </h1>
-        <h2 class="tails__section__el"> Javascript </h2>
+        <h2 class="tails__section__el"> Unity / XR / Simulation / Games </h2>
         <div class="tails__section__el">
           <p>
-            ES5 / ES6 <br>
-            Node.js <br>
-            Coffeescript <br>
-            Typescript
-          </p>
-          <p> 
-            <span> Make life easier: </span> jQuery, Zepto, underscore.js <br>
-            <span> WebGL: </span> Three.js <br>
-            <span> Canvas: </span> paper.js, D3.js <br>
-            <span> Animation: </span> TweenLite / TweenMax, Velocity.js <br>
-            <span> MV* Frameworks: </span> Backbone.js, AngularJS, React <br>
-            <span> Package manager: </span> Npm, Bower <br>
-            <span> Dependencies injection: </span> AMD (requirejs), CommonJS (browserify) <br>
-            <span> build tools: </span> Grunt, Gulp, Make <br>
-            <span> features detection: </span> Modernizr <br>
-            <span> Tests: </span> Jasmine, PhantomJS
-          </p>
-        </div>
-
-        <h2 class="tails__section__el"> HTML / CSS </h2>
-        <div class="tails__section__el">
-            <p>
-            HTML5 / CSS3 <br>
-            SVG
-          </p>
-          <p>
-            Preprocessors: LESS, SASS <br>
-            Modular: SMACSS, BEM
-          </p>
-        </div>
-        <h2 class="tails__section__el"> Misc </h2>
-        <div class="tails__section__el">
-          <p>
-            PHP: Cake PHP, Wordpress <br>
-            Python &amp; Ruby <br>
-            Version control: Git, SVN <br>
-            I care about the elders: Polyfills and fallbacks for older browsers <br>
-            Design patterns: MV*, Pubsub, Modules, Singleton, Decorator, ... <br>
-            Adobe creative suite: Photoshop, Illustrator, InDesign, ... <br>
-            3D: Maya
+            Unity (URP, XR Toolkit, Addressables) <br>
+            ECS/DOTS, Data-Oriented Architecture <br>
+            Simulation authoring &amp; workflow automation <br>
+            XR (VR/AR), Meta Quest 2/3 <br>
+            Performance optimization <br>
+            Multiplayer &amp; scalable systems
           </p>
         </div>
       </div>
