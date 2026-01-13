@@ -69,7 +69,7 @@ var SCENE = (function () {
     var totalSections;
     var currentIndex = 0;
     var previousIndex = 0;
-    
+
     // events
     var events = new Events();
 
@@ -77,9 +77,9 @@ var SCENE = (function () {
       function next () {
         if (currentIndex === totalSections) {
           if (!isLocked) {
-            events.trigger('end');  
+            events.trigger('end');
           }
-          
+
           return false;
         }
 
@@ -101,7 +101,7 @@ var SCENE = (function () {
       // scroll
       var newDate;
       var oldDate = new Date();
-      
+
       function onScroll (event) {
         newDate = new Date();
 
@@ -124,7 +124,7 @@ var SCENE = (function () {
       function onKeyDown (event) {
         if (!isScrolling && isActive) {
           var keyCode = event.keyCode;
-          
+
           if (keyCode === 40) {
             next();
           } else if (keyCode === 38) {
@@ -135,6 +135,91 @@ var SCENE = (function () {
 
       $viewport.on('DOMMouseScroll mousewheel', onScroll);
       jQuery(document).on('keydown', onKeyDown);
+    }
+
+    /**
+     * -----------------------------------------------
+     * ADD: Click/Tap handling for meshes with userData.href
+     * Works for desktop + mobile (pointer events)
+     * -----------------------------------------------
+     */
+    function enableHrefClicks () {
+      if (!renderer || !camera || !scene || !renderer.domElement) {
+        return false;
+      }
+
+      var dom = renderer.domElement;
+      var raycaster = new THREE.Raycaster();
+      var pointer = new THREE.Vector2();
+
+      function setPointerFromEvent (e) {
+        var rect = dom.getBoundingClientRect();
+
+        var clientX = e.clientX;
+        var clientY = e.clientY;
+
+        // Touch fallback
+        if ((clientX === undefined || clientY === undefined) && e.touches && e.touches.length) {
+          clientX = e.touches[0].clientX;
+          clientY = e.touches[0].clientY;
+        }
+
+        pointer.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+        pointer.y = -(((clientY - rect.top) / rect.height) * 2 - 1);
+      }
+
+      function findHref () {
+        raycaster.setFromCamera(pointer, camera);
+
+        // Deep intersect
+        var hits = raycaster.intersectObjects(scene.children, true);
+        if (!hits || !hits.length) {
+          return null;
+        }
+
+        for (var i = 0; i < hits.length; i++) {
+          var obj = hits[i].object;
+
+          // walk up parents (TextPanel often nests meshes)
+          while (obj) {
+            if (obj.userData && obj.userData.href) {
+              return obj.userData.href;
+            }
+            obj = obj.parent;
+          }
+        }
+
+        return null;
+      }
+
+      function onPointerDown (e) {
+        // Prevent scroll gesture from also clicking
+        e.preventDefault();
+
+        setPointerFromEvent(e);
+        var href = findHref();
+
+        if (href) {
+          e.preventDefault();  
+          window.location.href = href;
+        }
+      }
+
+      function onPointerMove (e) {
+        setPointerFromEvent(e);
+        var href = findHref();
+        document.body.style.cursor = href ? 'pointer' : '';
+      }
+
+      // pointer events cover mouse + touch (modern)
+      dom.addEventListener('pointerdown', onPointerDown, { passive: false });
+      dom.addEventListener('pointermove', onPointerMove, { passive: true });
+
+      // fallbacks (older)
+      dom.addEventListener('touchstart', onPointerDown, { passive: false });
+      dom.addEventListener('mousedown', onPointerDown, { passive: false });
+
+      return true;
     }
 
     function setup () {
@@ -173,6 +258,10 @@ var SCENE = (function () {
       $viewport.on('mousemove', onMouseMove);
 
       navigation();
+
+      // ADD: enable click/tap on userData.href
+      enableHrefClicks();
+
       draw();
 
       return SCENE.getInstance();
@@ -226,7 +315,7 @@ var SCENE = (function () {
       currentIndex = index;
 
       var nextPosition = index * -parameters.sectionHeight;
-      
+
       // which way are we animating?
       var way = index < previousIndex ? -1 : 1;
 
@@ -462,7 +551,16 @@ var SCENE = (function () {
             camera.updateProjectionMatrix();
           }
         });
-      }
+      },
+
+      /**
+       * -------------------------------------------------
+       * ADD: getters (so you can access these if needed)
+       * -------------------------------------------------
+       */
+      getRenderer: function () { return renderer; },
+      getCamera: function () { return camera; },
+      getScene: function () { return scene; }
     };
   }
 

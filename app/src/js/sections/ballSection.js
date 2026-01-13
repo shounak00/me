@@ -8,6 +8,9 @@ var Grid = require('../objects3D/GridObject3D');
 
 var ballSection = new Section('ball');
 
+/**
+ * Ball + Grid visuals
+ */
 var ball = new Ball();
 ball.el.rotation.z = 2;
 ballSection.add(ball.el);
@@ -22,18 +25,49 @@ grid.el.rotation.set(1.5, 1, 2);
 grid.el.position.x = -20;
 ballSection.add(grid.el);
 
-var text = new TextPanel(
-  'G  I  V  E \n S  H  A  P  E',
+/**
+ * Title: PROFESSIONAL SUMMARY
+ */
+var titleText = new TextPanel(
+  'P R O F E S S I O N A L \n S U M M A R Y',
+  {
+    align: 'left',
+    style: 'bold',
+    size: 50,
+    lineSpacing: 20
+  }
+);
+titleText.el.position.set(15, 6, 15);
+titleText.el.rotation.y = -0.4;
+ballSection.add(titleText.el);
+
+/**
+ * Summary details (smaller text below)
+ */
+var detailsText = new TextPanel(
+  'S E N I O R  U N I T Y  D E V E L O P E R  &  T E A M  L E A D\n\n' +
+  '5 +  Y E A R S  O F  E X P E R I E N C E  B U I L D I N G  H I G H - P E R F O R M A N C E\n' +
+  'U N I T Y  A P P L I C A T I O N S  A C R O S S  M E D I C A L  S I M U L A T I O N ,\n' +
+  'D I G I T A L  T W I N S ,  X R  ( V R / A R )  T R A I N I N G  S Y S T E M S ,\n' +
+  'A N D  G A M E S .\n\n' +
+  'S P E C I A L I Z E D  I N  U N I T Y  E C S  ( D O T S ) ,  D A T A - O R I E N T E D\n' +
+  'A R C H I T E C T U R E ,  S I M U L A T I O N  A U T H O R I N G ,\n' +
+  'A N D  W O R K F L O W  A U T O M A T I O N .\n\n' +
+  'P R O V E N  T R A C K  R E C O R D  O F  L E A D I N G  E N G I N E E R I N G  T E A M S ,\n' +
+  'A R C H I T E C T I N G  S C A L A B L E  S Y S T E M S ,  O P T I M I Z I N G\n' +
+  'P E R F O R M A N C E ,  A N D  D E L I V E R I N G  E N T E R P R I S E\n' +
+  'H E A L T H C A R E  S O L U T I O N S  A N D  C O N S U M E R  P R O D U C T S\n' +
+  'W I T H  M I L L I O N S  O F  U S E R S .',
   {
     align: 'left',
     style: '',
-    size: 50,
-    lineSpacing: 40
+    size: 8,
+    lineSpacing: 10
   }
 );
-text.el.position.set(15, 0, 15);
-text.el.rotation.y = -0.4;
-ballSection.add(text.el);
+detailsText.el.position.set(15, -6, 15);
+detailsText.el.rotation.y = -0.4;
+ballSection.add(detailsText.el);
 
 ball.el.visible = false;
 grid.el.visible = false;
@@ -41,11 +75,13 @@ grid.el.visible = false;
 ballSection.onIn(function () {
   ball.in();
   grid.in();
-  text.in();
+  titleText.in();
+  detailsText.in();
 });
 
 ballSection.onOut(function (way) {
-  text.out(way);
+  titleText.out(way);
+  detailsText.out(way);
   grid.out(way);
 
   if (way === 'up') {
