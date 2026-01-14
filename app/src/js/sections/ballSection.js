@@ -37,7 +37,7 @@ var titleText = new TextPanel(
     lineSpacing: 15
   }
 );
-titleText.el.position.set(10, 8, 15);
+titleText.el.position.set(9, 8, 15);
 titleText.el.rotation.y = -0.4;
 ballSection.add(titleText.el);
 
@@ -51,7 +51,7 @@ var roleText = new TextPanel(
   }
 );
 
-roleText.el.position.set(11.25, 4, 15);
+roleText.el.position.set(11.5, 4, 15);
 roleText.el.rotation.y = -0.4;
 ballSection.add(roleText.el);
 
