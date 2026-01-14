@@ -51,7 +51,7 @@ var roleText = new TextPanel(
   }
 );
 
-roleText.el.position.set(11.5, 4, 15);
+roleText.el.position.set(11.25, 4, 15);
 roleText.el.rotation.y = -0.4;
 ballSection.add(roleText.el);
 

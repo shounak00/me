@@ -21,35 +21,58 @@ var field = new FlowField(points, {
 });
 flowSection.add(field.el);
 
-var text = new TextPanel(
-  '**CORE TECHNICAL SKILLS**\n\n' +
-  'Unity Engine (URP, XR Toolkit, Addressables)\n' +
-  'Unity ECS / DOTS, Data-Oriented Architecture\n' +
-  'Simulation Authoring & Workflow Automation\n' +
-  'Custom Development Tools for Scalable Content Production\n' +
-  'C#, .NET / ASP.NET Core, JavaScript\n' +
-  'Backend Integration, REST APIs, xAPI\n' +
-  '.NET Hosting & Deployment on IIS (Windows Server)\n' +
-  'Android Build & Release Management for Unity Applications\n' +
-  'VR/AR Development (Meta Quest 2/3)\n' +
-  'Medical Simulation & Scenario-Based Training\n' +
-  'Digital Twins & Real-Time Control Systems\n' +
-  'LRS & LMS Integration\n' +
-  'Performance Optimization (CPU, GPU, Memory)\n' +
-  'Multiplayer & Scalable Systems\n' +
-  'Git, Jira, Agile/Scrum\n' +
-  'Unreal Engine (Working Knowledge)',
+/**
+ * Title (bold, left aligned)
+ */
+var titleText = new TextPanel(
+  'CORE TECHNICAL SKILLS',
   {
-    align: 'center',
-    style: '',
-    size: 36,
-    lineSpacing: 28
+    align: 'left',
+    style: 'bold',
+    size: 46,
+    lineSpacing: 30
   }
 );
 
-text.el.position.z = -10;
-text.el.rotation.y = 0.4;
-flowSection.add(text.el);
+titleText.el.position.z = -10.75;
+titleText.el.position.x = -13;
+titleText.el.position.y = 16;
+titleText.el.rotation.y = 0.4;
+flowSection.add(titleText.el);
+
+/**
+ * Body (left aligned, smaller, bullet list)
+ */
+var detailsText = new TextPanel(
+  '• Unity Engine (URP, XR Toolkit, Addressables)\n' +
+  '• Unity ECS / DOTS, Data-Oriented Architecture\n' +
+  '• Simulation Authoring & Workflow Automation\n' +
+  '• Custom Development Tools for Scalable Content Production\n' +
+  '• C#, .NET / ASP.NET Core, JavaScript\n' +
+  '• Backend Integration, REST APIs, xAPI\n' +
+  '• .NET Hosting & Deployment on IIS (Windows Server)\n' +
+  '• Android Build & Release Management for Unity Applications\n' +
+  '• VR/AR Development (Meta Quest 2/3)\n' +
+  '• Medical Simulation & Scenario-Based Training\n' +
+  '• Digital Twins & Real-Time Control Systems\n' +
+  '• LRS & LMS Integration\n' +
+  '• Performance Optimization (CPU, GPU, Memory)\n' +
+  '• Multiplayer & Scalable Systems\n' +
+  '• Git, Jira, Agile/Scrum\n' +
+  '• Unreal Engine (Working Knowledge)',
+  {
+    align: 'left',
+    style: '',
+    size: 24,
+    lineSpacing: 22
+  }
+);
+
+detailsText.el.position.z = -10;
+detailsText.el.position.x = -9;
+detailsText.el.position.y = -5;
+detailsText.el.rotation.y = 0.4;
+flowSection.add(detailsText.el);
 
 field.el.visible = false;
 
@@ -66,11 +89,13 @@ flowSection.fieldIn = function () {
 };
 
 flowSection.onIn(function () {
-  text.in();
+  titleText.in();
+  detailsText.in();
 });
 
 flowSection.onOut(function (way) {
-  text.out(way);
+  titleText.out(way);
+  detailsText.out(way);
 });
 
 flowSection.onStart(function () {
