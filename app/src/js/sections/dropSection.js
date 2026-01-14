@@ -44,7 +44,7 @@ var infoText = new TextPanel(
     lineSpacing: 40
   }
 );
-infoText.el.position.set(-13, 0, 0);
+infoText.el.position.set(-13.75, 0, 0);
 dropSection.add(infoText.el);
 
 /**

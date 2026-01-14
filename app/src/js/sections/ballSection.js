@@ -29,23 +29,37 @@ ballSection.add(grid.el);
  * Title: PROFESSIONAL SUMMARY
  */
 var titleText = new TextPanel(
-  'P R O F E S S I O N A L \n S U M M A R Y',
+  'PROFESSIONAL \n SUMMARY',
   {
     align: 'left',
     style: 'bold',
-    size: 50,
-    lineSpacing: 20
+    size: 45,
+    lineSpacing: 15
   }
 );
-titleText.el.position.set(15, 6, 15);
+titleText.el.position.set(10, 8, 15);
 titleText.el.rotation.y = -0.4;
 ballSection.add(titleText.el);
+
+var roleText = new TextPanel(
+  'S E N I O R  U N I T Y  D E V E L O P E R  &  T E A M  L E A D',
+  {
+    align: 'left',
+    style: 'bold',
+    size: 14,
+    lineSpacing: 14
+  }
+);
+
+roleText.el.position.set(11.5, 4, 15);
+roleText.el.rotation.y = -0.4;
+ballSection.add(roleText.el);
+
 
 /**
  * Summary details (smaller text below)
  */
 var detailsText = new TextPanel(
-  'S E N I O R  U N I T Y  D E V E L O P E R  &  T E A M  L E A D\n\n' +
   '5 +  Y E A R S  O F  E X P E R I E N C E  B U I L D I N G  H I G H - P E R F O R M A N C E\n' +
   'U N I T Y  A P P L I C A T I O N S  A C R O S S  M E D I C A L  S I M U L A T I O N ,\n' +
   'D I G I T A L  T W I N S ,  X R  ( V R / A R )  T R A I N I N G  S Y S T E M S ,\n' +
@@ -60,14 +74,16 @@ var detailsText = new TextPanel(
   'W I T H  M I L L I O N S  O F  U S E R S .',
   {
     align: 'left',
-    style: '',
-    size: 8,
+    style: 'bold',
+    size: 10,
     lineSpacing: 10
   }
 );
-detailsText.el.position.set(15, -6, 15);
+
+detailsText.el.position.set(12, -4, 15);
 detailsText.el.rotation.y = -0.4;
 ballSection.add(detailsText.el);
+
 
 ball.el.visible = false;
 grid.el.visible = false;
@@ -76,11 +92,13 @@ ballSection.onIn(function () {
   ball.in();
   grid.in();
   titleText.in();
+  roleText.in();
   detailsText.in();
 });
 
 ballSection.onOut(function (way) {
   titleText.out(way);
+  roleText.out(way);
   detailsText.out(way);
   grid.out(way);
 

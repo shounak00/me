@@ -22,14 +22,31 @@ var field = new FlowField(points, {
 flowSection.add(field.el);
 
 var text = new TextPanel(
-  'F  O  L  L  O  W \n T  H  E    T  R  E  N  D  S',
+  '**CORE TECHNICAL SKILLS**\n\n' +
+  'Unity Engine (URP, XR Toolkit, Addressables)\n' +
+  'Unity ECS / DOTS, Data-Oriented Architecture\n' +
+  'Simulation Authoring & Workflow Automation\n' +
+  'Custom Development Tools for Scalable Content Production\n' +
+  'C#, .NET / ASP.NET Core, JavaScript\n' +
+  'Backend Integration, REST APIs, xAPI\n' +
+  '.NET Hosting & Deployment on IIS (Windows Server)\n' +
+  'Android Build & Release Management for Unity Applications\n' +
+  'VR/AR Development (Meta Quest 2/3)\n' +
+  'Medical Simulation & Scenario-Based Training\n' +
+  'Digital Twins & Real-Time Control Systems\n' +
+  'LRS & LMS Integration\n' +
+  'Performance Optimization (CPU, GPU, Memory)\n' +
+  'Multiplayer & Scalable Systems\n' +
+  'Git, Jira, Agile/Scrum\n' +
+  'Unreal Engine (Working Knowledge)',
   {
     align: 'center',
     style: '',
-    size: 50,
-    lineSpacing: 40
+    size: 36,
+    lineSpacing: 28
   }
 );
+
 text.el.position.z = -10;
 text.el.rotation.y = 0.4;
 flowSection.add(text.el);
