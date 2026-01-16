@@ -60,4 +60,5 @@ npm install
 bower install
 gulp build
 gulp bundle
+gulp bundle:3D
 gulp serve
