@@ -50,7 +50,9 @@ $ gulp serve
 
 Go to `localhost:8000`.
 
-
+#### TO BUILD LOCALLY
+```
+nvs use 10
 npm install -g bower
 bower -v
 $env:Path += ";" + (npm bin -g)
@@ -62,3 +64,4 @@ gulp build
 gulp bundle
 gulp bundle:3D
 gulp serve
+```

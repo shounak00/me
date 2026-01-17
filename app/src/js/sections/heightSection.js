@@ -54,12 +54,12 @@ var project1Text = new TextPanel(
   {
     align: 'left',
     style: '',
-    size: 22,
+    size: 16,
     lineSpacing: 18
   }
 );
 
-project1Text.el.position.set(-25, -2, 0);
+project1Text.el.position.set(-25, 0, 0);
 project1Text.el.rotation.y = 0.6;
 heightSection.add(project1Text.el);
 
@@ -76,12 +76,12 @@ var project2Text = new TextPanel(
   {
     align: 'left',
     style: '',
-    size: 22,
+    size: 16,
     lineSpacing: 18
   }
 );
 
-project2Text.el.position.set(-25, -18, 0);
+project2Text.el.position.set(-25, -16, 0);
 project2Text.el.rotation.y = 0.6;
 heightSection.add(project2Text.el);
 
