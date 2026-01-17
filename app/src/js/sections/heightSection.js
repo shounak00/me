@@ -81,7 +81,7 @@ var project2Text = new TextPanel(
   }
 );
 
-project2Text.el.position.set(-25, -16, 0);
+project2Text.el.position.set(-26, -15, 0);
 project2Text.el.rotation.y = 0.6;
 heightSection.add(project2Text.el);
 

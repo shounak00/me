@@ -37,11 +37,11 @@ var project1Text = new TextPanel(
   {
     align: 'left',
     style: '',
-    size: 14,
+    size: 20,
     lineSpacing: 18
   }
 );
-project1Text.el.position.set(-28, 2, 0);
+project1Text.el.position.set(-24, 8, 0);
 waveSection.add(project1Text.el);
 
 /**
@@ -53,11 +53,11 @@ var project2Text = new TextPanel(
   {
     align: 'left',
     style: '',
-    size: 14,
+    size: 20,
     lineSpacing: 18
   }
 );
-project2Text.el.position.set(-28, -8, 0);
+project2Text.el.position.set(-28, 0, 0);
 waveSection.add(project2Text.el);
 
 /**
@@ -69,11 +69,11 @@ var project3Text = new TextPanel(
   {
     align: 'left',
     style: '',
-    size: 14,
+    size: 20,
     lineSpacing: 18
   }
 );
-project3Text.el.position.set(8, -8, 0);
+project3Text.el.position.set(8, -0, 0);
 waveSection.add(project3Text.el);
 
 /**
