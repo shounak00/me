@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>🌀 Shounak Sobahani</title>
 
   <link rel="image_src" href="./app/public/img/preview.jpg" />
-  <meta name="description" content="Senior Unity Developer & Team Lead. Medical Simulation • Digital Twins • XR (VR/AR) • ECS/DOTS • Simulation Authoring • Workflow Automation • Games." />
+  <meta name="description"
+    content="Senior Unity Developer & Team Lead. Medical Simulation • Digital Twins • XR (VR/AR) • ECS/DOTS • Simulation Authoring • Workflow Automation • Games." />
 
   <link rel="apple-touch-icon" sizes="57x57" href="./app/public/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="114x114" href="./app/public/favicons/apple-touch-icon-114x114.png">
@@ -43,11 +45,11 @@
 
       if (!window.console) { window.console = {}; }
       var methods = ['log', 'debug', 'warn', 'info'];
-      for (var i = 0; i < methods.length; i++){
-        console[methods[i]] = function () {};
+      for (var i = 0; i < methods.length; i++) {
+        console[methods[i]] = function () { };
       }
 
-      function mobile () {
+      function mobile() {
         return navigator.userAgent.match(/Android/i)
           || navigator.userAgent.match(/webOS/i)
           || navigator.userAgent.match(/iPhone/i)
@@ -57,12 +59,12 @@
           || navigator.userAgent.match(/Windows Phone/i);
       }
 
-      function webGL () {
+      function webGL() {
         try {
           var canvas = document.createElement('canvas');
-          return !! window.WebGLRenderingContext
+          return !!window.WebGLRenderingContext
             && (canvas.getContext('webgl')
-            || canvas.getContext('experimental-webgl'));
+              || canvas.getContext('experimental-webgl'));
 
         } catch (e) {
           return false;
@@ -97,16 +99,10 @@
   <div class="help">
     <div class="help__quit">
       <svg xmln="http://www.w3.org/2000/svg" viewBox="0 0 25 20">
-        <line stroke="#ffffff"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          x1="5.8" y1="16.7" x2="19.2" y2="3.3"></line>
-        <line stroke="#ffffff"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          x1="5.8" y1="3.3" x2="19.2" y2="16.7"></line>
+        <line stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="5.8" y1="16.7"
+          x2="19.2" y2="3.3"></line>
+        <line stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="5.8" y1="3.3"
+          x2="19.2" y2="16.7"></line>
       </svg>
     </div>
 
@@ -128,7 +124,8 @@
               </div>
             </div>
             <p class="text--center text--white">
-              There&apos;re 2 parts on the website. Presentation and About me, you can switch between them anytime by clicking on the bottom and top part of the screen.
+              There&apos;re 2 parts on the website. Presentation and About me, you can switch between them anytime by
+              clicking on the bottom and top part of the screen.
             </p>
           </div>
         </div>
@@ -196,12 +193,8 @@
       <div class="heads__viewport">
         <div class="trigger__info trigger__info--arrow">
           <svg xmln="http://www.w3.org/2000/svg" viewBox="0 0 25 20">
-            <path fill="none"
-              stroke="#ffffff"
-              stroke-width="1"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.5,5L12.5 15 22.5 5"/>
+            <path fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              d="M2.5,5L12.5 15 22.5 5" />
           </svg>
         </div>
 
@@ -224,147 +217,115 @@
             <h1 class="text--white text--noMargin"> Shounak Sobahani </h1>
             <h2 class="text--white text--noMargin"> Senior Unity Developer &amp; Team Lead </h2>
           </div>
-          <div class="part part--smoke"
-              data-0="transform:translate3d(0px, 0px, 0px)"
-              data-800="transform:translate3d(0px, -300px, 0px)"></div>
+          <div class="part part--smoke" data-0="transform:translate3d(0px, 0px, 0px)"
+            data-800="transform:translate3d(0px, -300px, 0px)"></div>
         </div>
 
         <!-- BEAMS -->
         <div class="heads__section heads__section--beams">
-          <div class="part part--beam--left"
-              data-100="transform:translate3d(0px, 120px, 0px); opacity:0"
-              data-500="opacity:0.1"
-              data-1500="transform:translate3d(0px, 0px, 0px)"></div>
-          <div class="part part--beam--center"
-              data-0="transform:translate3d(0px, -10px, 0px); opacity:0"
-              data-600="opacity:1"
-              data-1600="transform:translate3d(0px, 0px, 0px)"></div>
-          <div class="part part--beam--right"
-              data-100="transform:translate3d(0px, 50px, 0px); opacity:0"
-              data-600="opacity:0.3"
-              data-1700="transform:translate3d(0px, -50px, 0px)"></div>
+          <div class="part part--beam--left" data-100="transform:translate3d(0px, 120px, 0px); opacity:0"
+            data-500="opacity:0.1" data-1500="transform:translate3d(0px, 0px, 0px)"></div>
+          <div class="part part--beam--center" data-0="transform:translate3d(0px, -10px, 0px); opacity:0"
+            data-600="opacity:1" data-1600="transform:translate3d(0px, 0px, 0px)"></div>
+          <div class="part part--beam--right" data-100="transform:translate3d(0px, 50px, 0px); opacity:0"
+            data-600="opacity:0.3" data-1700="transform:translate3d(0px, -50px, 0px)"></div>
         </div>
 
         <!-- FROM / AN IDEA -> SS TEXT (2 lines) -->
         <div class="heads__section heads__section--drop">
-          <div class="part part--title drop__title"
-              data-1200="opacity:0"
-              data-1500="opacity:1">
+          <div class="part part--title drop__title" data-1200="opacity:0" data-1500="opacity:1">
             <h1 class="text--white text--right text--noMargin"> MEDICAL SIMULATION </h1>
             <h1 class="text--white text--right text--noMargin"> &amp; GAME SYSTEMS </h1>
           </div>
-          <div class="part part--drop"
-              data-1000="transform:translate3d(0px, 350px, 0px); opacity:0"
-              data-1700="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
+          <div class="part part--drop" data-1000="transform:translate3d(0px, 350px, 0px); opacity:0"
+            data-1700="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
         <!-- GIVE SHAPE -> PROFESSIONAL SUMMARY (kept as H1/H2 for style compatibility) -->
         <div class="heads__section heads__section--ball">
-          <div class="part part--title ball__title"
-              data-1700="opacity:0"
-              data-2000="opacity:1">
+          <div class="part part--title ball__title" data-1700="opacity:0" data-2000="opacity:1">
             <h1 class="text--white text--noMargin text--left"> PROFESSIONAL </h1>
             <h1 class="text--white text--noMargin text--left"> SUMMARY </h1>
             <p class="text--white" style="max-width: 520px; margin-top: 14px; line-height: 1.5;">
-              Senior Unity Developer and Team Lead with 5+ years of professional experience delivering high-performance Unity applications
-              across medical simulation, digital twins, and XR training systems. Expert in Unity ECS (DOTS), data-oriented design, and
-              simulation authoring &amp; workflow automation. Proven ability to lead engineering teams, architect scalable systems, and ship
+              Senior Unity Developer and Team Lead with 5+ years of professional experience delivering high-performance
+              Unity applications
+              across medical simulation, digital twins, and XR training systems. Expert in Unity ECS (DOTS),
+              data-oriented design, and
+              simulation authoring &amp; workflow automation. Proven ability to lead engineering teams, architect
+              scalable systems, and ship
               enterprise healthcare solutions and consumer products with millions of users.
             </p>
           </div>
-          <div class="part part--sphere"
-              data-1400="transform:translate3d(0px, -300px, 0px) rotate(60deg); opacity:0"
-              data-2800="transform:translate3d(0px, 250px, 0px) rotate(0deg); opacity:1"></div>
-          <div class="part part--grid"
-              data-1500="transform:translate3d(0px, 300px, 0px); opacity:0"
-              data-2600="transform:translate3d(0px, -200px, 0px); opacity:1"></div>
+          <div class="part part--sphere" data-1400="transform:translate3d(0px, -300px, 0px) rotate(60deg); opacity:0"
+            data-2800="transform:translate3d(0px, 250px, 0px) rotate(0deg); opacity:1"></div>
+          <div class="part part--grid" data-1500="transform:translate3d(0px, 300px, 0px); opacity:0"
+            data-2600="transform:translate3d(0px, -200px, 0px); opacity:1"></div>
         </div>
 
         <div class="heads__section heads__section--flow">
-          <div class="part part--field"
-              data-2000="transform:translate3d(0px, 200px, 0px); opacity:0"
-              data-2700="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
-          <div class="part part--neons"
-              data-2200="opacity:0"
-              data-3000="opacity:1"
-              data-3500="opacity:0"></div>
-          <div class="part part--smoke flow__smoke"
-              data-2200="transform:translate3d(0px, 400px, 0px); opacity:0"
-              data-3200="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
+          <div class="part part--field" data-2000="transform:translate3d(0px, 200px, 0px); opacity:0"
+            data-2700="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
+          <div class="part part--neons" data-2200="opacity:0" data-3000="opacity:1" data-3500="opacity:0"></div>
+          <div class="part part--smoke flow__smoke" data-2200="transform:translate3d(0px, 400px, 0px); opacity:0"
+            data-3200="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
         <!-- LET IT MORPH -> PROJECTS button -->
         <div class="heads__section heads__section--height">
-          <div class="part part--title height__title"
-              data-3500="opacity:0"
-              data-3800="opacity:1">
+          <div class="part part--title height__title" data-3500="opacity:0" data-3800="opacity:1">
             <a href="./app/src/project.html" style="text-decoration:none;">
               <h1 class="text--white text--right text--noMargin"> PROJECTS </h1>
               <h1 class="text--white text--right text--noMargin"> VIEW </h1>
             </a>
           </div>
-          <div class="part part--height"
-              data-3000="transform:translate3d(0px, 200px, 0px); opacity:0"
-              data-4000="transform:translate3d(0px, 0px, 0px); opacity:0.5"></div>
+          <div class="part part--height" data-3000="transform:translate3d(0px, 200px, 0px); opacity:0"
+            data-4000="transform:translate3d(0px, 0px, 0px); opacity:0.5"></div>
         </div>
 
         <!-- KEEP TRYING -> RESUME button -->
         <div class="heads__section heads__section--face">
-          <div class="part part--title face__title"
-            data-3800="opacity:0"
-            data-5000="opacity:1">
+          <div class="part part--title face__title" data-3800="opacity:0" data-5000="opacity:1">
             <a href="./app/src/resume.html" style="text-decoration:none;">
               <h1 class="text--white text--left text--noMargin"> RESUME </h1>
               <h1 class="text--white text--left text--noMargin"> VIEW </h1>
             </a>
           </div>
-          <div class="part part--face"
-              data-4000="transform:translate3d(0px, 200px, 0px); opacity:0"
-              data-5500="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
+          <div class="part part--face" data-4000="transform:translate3d(0px, 200px, 0px); opacity:0"
+            data-5500="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
         <!-- KEEP LEARNING -> REELS button -->
         <div class="heads__section heads__section--rocks">
-          <div class="part part--title rocks__title"
-            data-5200="opacity:0"
-            data-5800="opacity:1">
+          <div class="part part--title rocks__title" data-5200="opacity:0" data-5800="opacity:1">
             <a href="./app/src/reels.html" style="text-decoration:none;">
               <h1 class="text--white text--noMargin"> REELS </h1>
               <h1 class="text--white text--noMargin"> WATCH </h1>
             </a>
           </div>
-          <div class="part part--rocks"
-              data-5000="transform:translate3d(0px, 200px, 0px);"
-              data-6000="transform:translate3d(0px, 100px, 0px);"></div>
+          <div class="part part--rocks" data-5000="transform:translate3d(0px, 200px, 0px);"
+            data-6000="transform:translate3d(0px, 100px, 0px);"></div>
         </div>
 
         <!-- WORK AS A TEAM -> ARTICLES button -->
         <div class="heads__section heads__section--galaxy">
-          <div class="part part--title galaxy__title"
-            data-5900="opacity:0"
-            data-6500="opacity:1">
+          <div class="part part--title galaxy__title" data-5900="opacity:0" data-6500="opacity:1">
             <a href="./app/src/articles.html" style="text-decoration:none;">
               <h1 class="text--white text--noMargin"> ARTICLES </h1>
               <h1 class="text--white text--noMargin"> READ </h1>
             </a>
           </div>
-          <div class="part part--galaxy"
-            data-5800="transform:translate3d(0px, -100px, 0px); opacity:0"
+          <div class="part part--galaxy" data-5800="transform:translate3d(0px, -100px, 0px); opacity:0"
             data-6800="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
         <div class="heads__section heads__section--gravity">
-          <div class="part part--gravity"
-            data-6200="transform:translate3d(0px, 200px, 0px); opacity:0"
-            data-6800="transform:translate3d(0px, 0px, 0px); opacity:1"
-            ></div>
+          <div class="part part--gravity" data-6200="transform:translate3d(0px, 200px, 0px); opacity:0"
+            data-6800="transform:translate3d(0px, 0px, 0px); opacity:1"></div>
         </div>
 
         <!-- THANKS FOR WATCHING -> CONTACT ME button -->
         <div class="heads__section heads__section--end">
-          <div class="part part--title end__title"
-              data-7000="opacity:0"
-              data-7400="opacity:1">
+          <div class="part part--title end__title" data-7000="opacity:0" data-7400="opacity:1">
             <a href="./app/src/contact.html" style="text-decoration:none;">
               <h1 class="text--white text--noMargin"> CONTACT </h1>
               <h1 class="text--white text--noMargin"> ME </h1>
@@ -381,49 +342,232 @@
       <div class="tails__section tails__section--about">
         <h1 class="tails__section__el"> 影 </h1>
         <h2 class="tails__section__el text--center">
-          Shounak Sobahani <br/>
+          Shounak Sobahani <br />
           Senior Unity Developer &amp; Team Lead
         </h2>
         <div class="tails__section__el">
           <p>
-            Senior Unity Developer and Team Lead with 5+ years of professional experience delivering high-performance Unity applications
-              across medical simulation, digital twins, and XR training systems. Expert in Unity ECS (DOTS), data-oriented design, and
-              simulation authoring &amp; workflow automation. Proven ability to lead engineering teams, architect scalable systems, and ship
-              enterprise healthcare solutions and consumer products with millions of users.
+            Senior Unity Developer and Team Lead with 5+ years of professional experience delivering high-performance
+            Unity applications
+            across medical simulation, digital twins, and XR training systems. Expert in Unity ECS (DOTS), data-oriented
+            design, and
+            simulation authoring &amp; workflow automation. Proven ability to lead engineering teams, architect scalable
+            systems, and ship
+            enterprise healthcare solutions and consumer products with millions of users.
           </p>
           <p>
-            Email: shounak00@gmail.com <br/>
-            LinkedIn: https://www.linkedin.com/in/shounak00 <br/>
-            GitHub: https://github.com/shounak00 <br/>
+            Email: shounak00@gmail.com <br />
+            LinkedIn: https://www.linkedin.com/in/shounak00 <br />
+            GitHub: https://github.com/shounak00 <br />
             Portfolio: https://shounak00.github.io/ShounakUnity
           </p>
+
+          <div class="tails__section__el">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <p>
+              <strong>Senior Unity Developer (Lead)</strong><br>
+              Talent Pro | June 2024 – Present<br>
+              • Lead Unity development for enterprise-grade medical simulation and XR training platforms.<br>
+              • Architect ECS-driven systems for scalable scenario execution and assessment logic.<br>
+              • Design simulation authoring & workflow automation tools for non-technical SMEs.<br>
+              • Develop VR medical training applications using Meta Quest 3.<br>
+              • Integrate xAPI and Learning Record Stores (LRS).<br>
+              • Mentor engineers and define technical standards.
+            </p>
+
+            <p>
+              <strong>Senior Unity Developer</strong><br>
+              Ghost Interactive | February 2022 – May 2024<br>
+              • Shipped Unity products with 1M+ total downloads.<br>
+              • Designed ECS-inspired architectures.<br>
+              • Built internal tools to improve QA and production efficiency.<br>
+              • Optimized rendering, physics, and memory usage.
+            </p>
+
+            <p>
+              <strong>Junior Software Engineer (Game)</strong><br>
+              Toontech (Games4Life) | March 2021 – January 2022
+            </p>
+
+            <p>
+              <strong>Junior Game Developer</strong><br>
+              Technomagic Pvt Ltd | September 2020 – February 2021
+            </p>
+
+            <h2>KEY PROJECTS</h2>
+            <p>
+              <strong>SIT CPREP – Clinical Preparedness E-Learning Program</strong><br>
+              Singapore Institute of Technology<br>
+              • Medical simulation scenarios for radiographers & physiotherapists.<br>
+              • ECS-based scenario flow and assessment systems.<br>
+              • Simulation authoring & workflow automation tools.<br>
+              • LMS & xAPI analytics integration.
+            </p>
+
+            <p>
+              <strong>JLG Crane – Digital Twin (VR)</strong><br>
+              • VR-based real-time crane operation and training system.<br>
+              • Physics coordination and safety validation logic.
+            </p>
+
+            <p>
+              <strong>Bus Simulator BD</strong> – 2M+ Downloads<br>
+              • Vehicle physics & rendering optimization for low-end Android devices.
+            </p>
+
+            <p>
+              <strong>Trench Warfare</strong> – 1M+ Downloads<br>
+              • AI-driven WW1 strategy gameplay systems.
+            </p>
+
+            <p>
+              <strong>The Rem</strong> – 500K+ Downloads<br>
+              • Modular horror survival systems.
+            </p>
+
+            <p>
+              <strong>AlexanderBall: A Countryball Tale</strong> (Steam)<br>
+              • Large-scale simulation & optimized pathfinding.
+            </p>
+
+            <h2>EDUCATION</h2>
+            <p>
+              B.Sc. in Computer Science & Engineering<br>
+              Jahangirnagar University, Bangladesh<br>
+              CGPA: 3.17 / 4.00
+            </p>
+
+            <h2>CERTIFICATIONS</h2>
+
+            <h4>University &amp; Core Game Development (Coursera)</h4>
+            <p>
+              • Game Design and Development Specialization – Michigan State University<br>
+              Credential ID: XU38U23UKCJ7
+            </p>
+            <p>
+              • Game Design and Development Capstone – Michigan State University<br>
+              Credential ID: 6JK5C8D2GZJE
+            </p>
+            <p>
+              • Game Development for Modern Platforms – Michigan State University<br>
+              Credential ID: 29R5UU7GYP9K
+            </p>
+            <p>
+              • Business of Games and Entrepreneurship – Michigan State University<br>
+              Credential ID: FF3ZL86FX83H
+            </p>
+            <p>
+              • Principles of Game Design – Michigan State University<br>
+              Credential ID: PYETUSBA38N7
+            </p>
+            <p>
+              • Introduction to Game Development – Michigan State University<br>
+              Credential ID: VDRKD7ZZETCQ
+            </p>
+            <p>
+              • Introduction to C# Programming and Unity – University of Colorado<br>
+              Credential ID: HJPFVFPQYFBU
+            </p>
+            <p>
+              • More C# Programming and Unity – University of Colorado<br>
+              Credential ID: CFHP556LERX8
+            </p>
+
+            <h4>Unity / XR / AR</h4>
+            <p>
+              • Unity and C# Basics – Meta<br>
+              Credential ID: KHFYXRKUGYL3
+            </p>
+            <p>• Unity: Building VR User Interfaces – LinkedIn Learning</p>
+            <p>• Unity: Integrating GPS and Points of Interest – LinkedIn Learning</p>
+            <p>• AR Development Techniques 01: Basic Concepts – LinkedIn Learning</p>
+            <p>• AR Development Techniques 02: Lighting and Physics – LinkedIn Learning</p>
+
+            <h4>AI / Generative AI</h4>
+            <p>
+              • Build Your Generative AI Productivity Skills – Microsoft &amp; LinkedIn
+            </p>
+            <p>
+              • Introduction to Generative AI – Google<br>
+              Credential ID: 8336900
+            </p>
+
+            <h4>Agile / Software Practices</h4>
+            <p>• Agile Foundations – LinkedIn Learning</p>
+            <p>• Scrum: The Basics – LinkedIn Learning</p>
+            <p>• Agile Project Management with Jira Cloud (Projects, Boards, Processes)</p>
+
+            <h4>Industry &amp; Government</h4>
+            <p>
+              • Intel Edge AI Scholarship – OpenVINO Fundamentals – Intel Corporation
+            </p>
+            <p>
+              • Training for Mobile Application Developer (iOS) – ICT Division, Bangladesh<br>
+              Credential ID: L1A-B-30-0-37
+            </p>
+
+
+            <h2>DECLARATION</h2>
+            <p>
+              I hereby declare that all the information provided above is true, complete,
+              and accurate to the best of my knowledge and belief.
+            </p>
+
+          </div>
+
         </div>
       </div>
 
       <div class="tails__section tails__section--site">
         <h1 class="tails__section__el"> ABOUT THIS WEBSITE </h1>
         <p>
-          This site is an interactive WebGL-inspired experiment. I use it as a hub for my Unity work across simulation and games.
+          This site is an interactive WebGL-inspired experiment. I use it as a hub for my Unity work across simulation
+          and games.
         </p>
       </div>
 
       <div class="tails__section tails__section--skills">
         <h1 class="tails__section__el"> MY SKILLS </h1>
+
         <h2 class="tails__section__el"> Unity / XR / Simulation / Games </h2>
         <div class="tails__section__el">
           <p>
-            Unity (URP, XR Toolkit, Addressables) <br>
-            ECS/DOTS, Data-Oriented Architecture <br>
-            Simulation authoring &amp; workflow automation <br>
-            XR (VR/AR), Meta Quest 2/3 <br>
-            Performance optimization <br>
-            Multiplayer &amp; scalable systems
+            Unity Engine (URP, XR Toolkit, Addressables)<br>
+            Unity ECS / DOTS, Data-Oriented Architecture<br>
+            Simulation authoring & workflow automation<br>
+            Medical simulation & scenario-based training<br>
+            Digital twins & real-time control systems<br>
+            VR / AR development (Meta Quest 2 / 3)<br>
+            Performance optimization (CPU, GPU, memory)<br>
+            Multiplayer & scalable systems
+          </p>
+        </div>
+
+        <h2 class="tails__section__el"> Programming / Backend </h2>
+        <div class="tails__section__el">
+          <p>
+            C#, .NET / ASP.NET Core<br>
+            JavaScript<br>
+            Backend integration & REST APIs<br>
+            xAPI, Learning Record Store (LRS) & LMS integration<br>
+            .NET application hosting & deployment on IIS (Windows Server)
+          </p>
+        </div>
+
+        <h2 class="tails__section__el"> Tools / Platforms </h2>
+        <div class="tails__section__el">
+          <p>
+            Custom development tools for scalable content production<br>
+            Android build & release management for Unity<br>
+            Git, Jira, Agile / Scrum
           </p>
         </div>
       </div>
+
     </div>
 
     <div class="trigger"></div>
   </div>
 </body>
+
 </html>
