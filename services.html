@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>Services – Shounak Sobahani</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>
+:root{
+  --bg:#0b0f17;
+  --card:#0f1623;
+  --text:#e7eefc;
+  --muted:#a9b6d3;
+  --line:rgba(255,255,255,.08);
+  --btn:#172238;
+  --btnHover:#1f2d4a;
+  --accent:#7aa7ff;
+  --accent2:#7affce;
+  --gold:#ffd97d;
+  --goldFaint:rgba(255,217,125,.08);
+  --accentFaint:rgba(122,167,255,.08);
+  --accent2Faint:rgba(122,255,206,.07);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Helvetica Neue",Helvetica,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 20% -10%,rgba(122,167,255,.22),transparent 60%),
+    radial-gradient(1000px 600px at 80% 10%,rgba(122,255,211,.12),transparent 60%),
+    var(--bg);
+  color:var(--text);
+  line-height:1.55;
+}
+.wrap{max-width:980px;margin:0 auto;padding:28px 18px 80px}
+
+/* Back */
+.back a{
+  display:inline-flex;align-items:center;gap:10px;
+  text-decoration:none;color:var(--muted);
+  border:1px solid var(--line);padding:10px 14px;
+  border-radius:12px;background:rgba(255,255,255,.03);
+  transition:.18s ease;font-size:14px;
+}
+.back a:hover{color:var(--text);border-color:rgba(122,167,255,.35)}
+
+/* Hero */
+.hero{margin:36px 0 10px}
+.hero h1{margin:0 0 10px;font-size:clamp(28px,4vw,46px);letter-spacing:.3px;line-height:1.15}
+.hero p{margin:0;color:var(--muted);font-size:clamp(14px,1.8vw,17px);max-width:600px;line-height:1.65}
+.hero .badge{
+  display:inline-block;margin-bottom:16px;
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);border:1px solid rgba(122,167,255,.28);
+  padding:5px 12px;border-radius:999px;background:rgba(122,167,255,.07);
+}
+
+/* Section headings */
+.section-label{
+  margin:52px 0 20px;font-size:12px;letter-spacing:.2em;
+  color:var(--muted);text-transform:uppercase;
+  display:flex;align-items:center;gap:12px;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--line)}
+
+/* Grid */
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-3-alt{grid-template-columns:repeat(3,1fr)}
+
+/* Package card */
+.pkg{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:26px 24px 28px;
+  background:rgba(15,22,35,.72);
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 30px rgba(0,0,0,.22);
+  display:flex;flex-direction:column;gap:0;
+  transition:.2s ease;
+  position:relative;overflow:hidden;
+}
+.pkg:hover{border-color:rgba(122,167,255,.28);transform:translateY(-2px);box-shadow:0 16px 40px rgba(0,0,0,.32)}
+
+.pkg--standard{border-color:rgba(122,167,255,.28);background:rgba(20,30,52,.82)}
+.pkg--standard .pkg-badge{background:rgba(122,167,255,.12);color:var(--accent);border-color:rgba(122,167,255,.3)}
+
+.pkg--premium{border-color:rgba(255,217,125,.22);background:rgba(25,20,12,.82)}
+.pkg--premium .pkg-badge{background:rgba(255,217,125,.1);color:var(--gold);border-color:rgba(255,217,125,.3)}
+.pkg--premium:hover{border-color:rgba(255,217,125,.4)}
+
+.pkg-badge{
+  display:inline-block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  padding:4px 10px;border-radius:999px;border:1px solid var(--line);
+  color:var(--muted);background:rgba(255,255,255,.04);
+  margin-bottom:16px;width:fit-content;
+}
+
+.pkg-price{
+  font-size:clamp(32px,4vw,44px);font-weight:700;letter-spacing:-.5px;
+  margin:0 0 4px;line-height:1;
+}
+.pkg-price span{font-size:18px;font-weight:400;color:var(--muted);vertical-align:top;margin-top:5px;display:inline-block}
+.pkg--standard .pkg-price{color:var(--accent)}
+.pkg--premium .pkg-price{color:var(--gold)}
+
+.pkg-tagline{
+  font-size:13px;color:var(--muted);margin:0 0 20px;line-height:1.45;
+}
+.pkg-divider{height:1px;background:var(--line);margin:0 0 18px}
+
+.pkg-name{
+  font-size:17px;font-weight:600;margin:0 0 6px;letter-spacing:.1px;
+}
+.pkg--standard .pkg-name{color:var(--accent)}
+.pkg--premium .pkg-name{color:var(--gold)}
+
+.pkg-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;flex:1}
+.pkg-list li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:13.5px;color:var(--text);opacity:.9;line-height:1.45;
+}
+.pkg-list li::before{
+  content:'';display:block;width:5px;height:5px;border-radius:50%;
+  background:var(--muted);margin-top:6px;flex-shrink:0;opacity:.55;
+}
+.pkg--standard .pkg-list li::before{background:var(--accent);opacity:.7}
+.pkg--premium .pkg-list li::before{background:var(--gold);opacity:.7}
+
+.pkg-cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  margin-top:22px;padding:11px 18px;
+  border-radius:12px;border:1px solid var(--line);
+  background:var(--btn);color:var(--text);
+  text-decoration:none;font-weight:600;font-size:13.5px;
+  transition:.18s ease;letter-spacing:.1px;
+}
+.pkg-cta:hover{background:var(--btnHover);border-color:rgba(122,167,255,.35)}
+.pkg--standard .pkg-cta{border-color:rgba(122,167,255,.3);background:rgba(122,167,255,.1);color:var(--accent)}
+.pkg--standard .pkg-cta:hover{background:rgba(122,167,255,.18)}
+.pkg--premium .pkg-cta{border-color:rgba(255,217,125,.25);background:rgba(255,217,125,.08);color:var(--gold)}
+.pkg--premium .pkg-cta:hover{background:rgba(255,217,125,.15)}
+
+/* "Most Popular" ribbon */
+.ribbon{
+  position:absolute;top:18px;right:-26px;
+  background:var(--accent);color:#0b0f17;
+  font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 34px;transform:rotate(45deg);
+}
+
+/* Hourly plan cards */
+.plan{
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:22px 22px 24px;
+  background:rgba(15,22,35,.72);
+  backdrop-filter:blur(10px);
+  box-shadow:0 8px 24px rgba(0,0,0,.2);
+  display:flex;flex-direction:column;gap:0;
+  transition:.2s ease;
+}
+.plan:hover{border-color:rgba(122,167,255,.28);transform:translateY(-2px)}
+
+.plan--standard{border-color:rgba(122,167,255,.22)}
+.plan--premium{border-color:rgba(255,217,125,.18)}
+
+.plan-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}
+.plan-name{font-size:16px;font-weight:600;margin:0}
+.plan--standard .plan-name{color:var(--accent)}
+.plan--premium .plan-name{color:var(--gold)}
+
+.plan-rate{text-align:right}
+.plan-rate .amount{font-size:26px;font-weight:700;line-height:1}
+.plan--standard .plan-rate .amount{color:var(--accent)}
+.plan--premium .plan-rate .amount{color:var(--gold)}
+.plan-rate .per{font-size:12px;color:var(--muted)}
+.plan-cap{
+  display:inline-block;font-size:11px;color:var(--muted);
+  border:1px solid var(--line);border-radius:999px;
+  padding:3px 10px;margin-bottom:14px;
+}
+.plan-divider{height:1px;background:var(--line);margin:0 0 14px}
+.plan-desc{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.55}
+.plan-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px;flex:1}
+.plan-list li{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text);opacity:.85;line-height:1.4}
+.plan-list li::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:var(--muted);margin-top:6px;flex-shrink:0;opacity:.5}
+.plan--standard .plan-list li::before{background:var(--accent);opacity:.65}
+.plan--premium .plan-list li::before{background:var(--gold);opacity:.65}
+
+/* Note / contact CTA strip */
+.cta-strip{
+  margin-top:48px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:28px 28px;
+  background:rgba(15,22,35,.72);
+  backdrop-filter:blur(10px);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+}
+.cta-strip h2{margin:0 0 6px;font-size:clamp(18px,2.2vw,24px)}
+.cta-strip p{margin:0;color:var(--muted);font-size:14px;max-width:500px;line-height:1.55}
+.cta-strip a{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 22px;border-radius:14px;
+  border:1px solid rgba(122,167,255,.3);
+  background:rgba(122,167,255,.1);
+  color:var(--accent);text-decoration:none;
+  font-weight:600;font-size:14px;transition:.18s ease;white-space:nowrap;
+}
+.cta-strip a:hover{background:rgba(122,167,255,.2);border-color:rgba(122,167,255,.5)}
+
+/* Note box */
+.note{
+  margin-top:18px;padding:14px 18px;
+  border-radius:12px;border:1px solid rgba(122,167,255,.15);
+  background:rgba(122,167,255,.05);
+  font-size:13px;color:var(--muted);line-height:1.55;
+}
+.note strong{color:var(--text)}
+
+/* Responsive */
+@media(max-width:860px){
+  .grid-3,.grid-3-alt{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .cta-strip{flex-direction:column;align-items:flex-start}
+}
+</style></head><body>
+<div class="wrap">
+
+  <!-- Back -->
+  <p class="back"><a href="index.html">← Back</a></p>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="badge">Services & Pricing</div>
+    <h1>What I Offer</h1>
+    <p>Senior Unity development across medical simulation, XR, digital twins, and game systems. Choose a fixed-scope package or a dedicated hourly plan that fits your workflow.</p>
+  </div>
+
+  <!-- ── FIXED-SCOPE PACKAGES ── -->
+  <div class="section-label">Fixed-Scope Packages</div>
+
+  <div class="grid grid-3">
+
+    <!-- Basic -->
+    <div class="pkg">
+      <div class="pkg-badge">Basic</div>
+      <div class="pkg-price"><span>$</span>300</div>
+      <p class="pkg-tagline">Ideal for small-scope work or quick prototypes.</p>
+      <div class="pkg-divider"></div>
+      <p class="pkg-name">Basic Package</p>
+      <ul class="pkg-list">
+        <li>Single feature or mechanic implementation</li>
+        <li>Quick prototype or proof-of-concept build</li>
+        <li>Bug fixing or targeted code review</li>
+        <li>Basic UI / game-feel polish pass</li>
+        <li>1 round of revisions included</li>
+        <li>Delivery within agreed timeline</li>
+      </ul>
+      <a class="pkg-cta" href="contact.html">Get Started →</a>
+    </div>
+
+    <!-- Standard (highlighted) -->
+    <div class="pkg pkg--standard">
+      <div class="ribbon">Popular</div>
+      <div class="pkg-badge pkg-badge--standard">Standard</div>
+      <div class="pkg-price"><span>$</span>700</div>
+      <p class="pkg-tagline">Best for most projects — structured development, polished systems, and performance-focused implementation.</p>
+      <div class="pkg-divider"></div>
+      <p class="pkg-name">Standard Package</p>
+      <ul class="pkg-list">
+        <li>Full system design and implementation</li>
+        <li>ECS / DOTS architecture & optimization</li>
+        <li>XR / VR / AR feature development</li>
+        <li>Simulation scenario or training module</li>
+        <li>Performance profiling and optimization</li>
+        <li>Code documentation and handoff notes</li>
+        <li>2 rounds of revisions included</li>
+        <li>Post-delivery support (3 days)</li>
+      </ul>
+      <a class="pkg-cta" href="contact.html">Get Started →</a>
+    </div>
+
+    <!-- Premium -->
+    <div class="pkg pkg--premium">
+      <div class="pkg-badge">Premium</div>
+      <div class="pkg-price"><span>$</span>3000</div>
+      <p class="pkg-tagline">End-to-end development with advanced systems design, production-ready architecture, and post-delivery support.</p>
+      <div class="pkg-divider"></div>
+      <p class="pkg-name">Premium Package</p>
+      <ul class="pkg-list">
+        <li>Full project ownership from scoping to delivery</li>
+        <li>Advanced simulation authoring & workflow tools</li>
+        <li>LMS / xAPI / LRS integration</li>
+        <li>Digital twin or multi-system architecture</li>
+        <li>Custom editor tooling for non-technical teams</li>
+        <li>CI/CD setup and build pipeline configuration</li>
+        <li>Comprehensive documentation and onboarding</li>
+        <li>Unlimited revisions during development</li>
+        <li>Post-delivery support (14 days)</li>
+      </ul>
+      <a class="pkg-cta" href="contact.html">Get Started →</a>
+    </div>
+
+  </div>
+
+  <!-- ── DEDICATED HOURLY PLANS ── -->
+  <div class="section-label">Dedicated Hourly Plans</div>
+  <p style="margin:0 0 22px;color:var(--muted);font-size:14px;line-height:1.6">For ongoing development, continuous iteration, and teams that need consistent, reliable engineering hours every day.</p>
+
+  <div class="grid grid-3-alt">
+
+    <!-- Basic Plan -->
+    <div class="plan">
+      <div class="plan-header">
+        <p class="plan-name">Basic Plan</p>
+        <div class="plan-rate">
+          <div class="amount">$14<span style="font-size:15px;font-weight:400;color:var(--muted)">/hr</span></div>
+        </div>
+      </div>
+      <div class="plan-cap">Up to 4 hours / day</div>
+      <div class="plan-divider"></div>
+      <p class="plan-desc">Best for small features, targeted fixes, and incremental updates that don't require full-day engagement.</p>
+      <ul class="plan-list">
+        <li>Incremental feature additions</li>
+        <li>Bug investigation and resolution</li>
+        <li>Code reviews and refactors</li>
+        <li>Light system improvements</li>
+        <li>Async communication (24 h response)</li>
+      </ul>
+      <a class="pkg-cta" href="contact.html" style="margin-top:20px">Get Started →</a>
+    </div>
+
+    <!-- Standard Plan -->
+    <div class="plan plan--standard">
+      <div class="plan-header">
+        <p class="plan-name">Standard Plan</p>
+        <div class="plan-rate">
+          <div class="amount">$20<span style="font-size:15px;font-weight:400;color:var(--muted)">/hr</span></div>
+        </div>
+      </div>
+      <div class="plan-cap">Up to 6 hours / day</div>
+      <div class="plan-divider"></div>
+      <p class="plan-desc">Ideal for consistent development, system design, and ongoing optimization across an active project.</p>
+      <ul class="plan-list">
+        <li>Full feature development cycles</li>
+        <li>System architecture and design decisions</li>
+        <li>Performance profiling and optimization</li>
+        <li>XR / simulation module work</li>
+        <li>Regular sync calls and progress updates</li>
+        <li>Priority response within 4 hours</li>
+      </ul>
+      <a class="pkg-cta pkg--standard" href="contact.html" style="margin-top:20px;border-color:rgba(122,167,255,.3);background:rgba(122,167,255,.1);color:var(--accent)">Get Started →</a>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="plan plan--premium">
+      <div class="plan-header">
+        <p class="plan-name">Premium Plan</p>
+        <div class="plan-rate">
+          <div class="amount" style="color:var(--gold)">$35<span style="font-size:15px;font-weight:400;color:var(--muted)">/hr</span></div>
+        </div>
+      </div>
+      <div class="plan-cap">Up to 9 hours / day</div>
+      <div class="plan-divider"></div>
+      <p class="plan-desc">For fast-paced development with full ownership, deep system work, and priority delivery at maximum capacity.</p>
+      <ul class="plan-list">
+        <li>Full daily engineering ownership</li>
+        <li>End-to-end system and architecture work</li>
+        <li>Simulation authoring & workflow tooling</li>
+        <li>LMS / xAPI / LRS integration</li>
+        <li>Custom editor tools and pipelines</li>
+        <li>Dedicated real-time communication</li>
+        <li>Weekly technical report and roadmap review</li>
+      </ul>
+      <a class="pkg-cta" href="contact.html" style="margin-top:20px;border-color:rgba(255,217,125,.25);background:rgba(255,217,125,.08);color:var(--gold)">Get Started →</a>
+    </div>
+
+  </div>
+
+  <!-- Note -->
+  <div class="note">
+    <strong>Note:</strong> All prices are in USD. Hourly plans are billed based on logged hours within the agreed daily cap. Fixed-scope packages include defined deliverables — scope changes may affect the final price. Not sure which fits? <a href="contact.html" style="color:var(--accent);text-decoration:none">Send a message</a> and we'll figure it out together.
+  </div>
+
+  <!-- CTA Strip -->
+  <div class="cta-strip">
+    <div>
+      <h2>Ready to work together?</h2>
+      <p>Reach out with your project details and I'll get back to you within 24 hours. Custom scopes and team rates are available on request.</p>
+    </div>
+    <a href="contact.html">Contact Me →</a>
+  </div>
+
+</div>
+</body></html>

@@ -1,1 +1,363 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Shounak Sobahani</title><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><p><a href="../../index.html">← Back</a></p><h1>Coming soon</h1></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>Resume – Shounak Sobahani</title><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+:root{
+  --bg:#0b0f17;--card:#0f1623;--text:#e7eefc;--muted:#a9b6d3;
+  --line:rgba(255,255,255,.08);--btn:#172238;--btnHover:#1f2d4a;--accent:#7aa7ff;--accent2:#7affce;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Helvetica Neue",Helvetica,sans-serif;
+  background:radial-gradient(1200px 600px at 20% -10%,rgba(122,167,255,.25),transparent 60%),
+             radial-gradient(1000px 600px at 80% 10%,rgba(122,255,211,.14),transparent 60%),var(--bg);
+  color:var(--text);line-height:1.55;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 80px}
+
+/* top bar */
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.back a{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--muted);
+  border:1px solid var(--line);padding:10px 14px;border-radius:12px;
+  background:rgba(255,255,255,.03);transition:.18s ease;font-size:14px;
+}
+.back a:hover{color:var(--text);border-color:rgba(122,167,255,.35)}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;
+  border:1px solid var(--line);background:var(--btn);color:var(--text);
+  text-decoration:none;font-size:13.5px;font-weight:600;cursor:pointer;transition:.18s ease;
+}
+.btn:hover{background:var(--btnHover);border-color:rgba(122,167,255,.35)}
+.btn--primary{border-color:rgba(122,167,255,.3);background:rgba(122,167,255,.1);color:var(--accent)}
+.btn--primary:hover{background:rgba(122,167,255,.2);border-color:rgba(122,167,255,.5)}
+
+/* resume card */
+.resume-card{
+  border:1px solid var(--line);background:rgba(15,22,35,.72);backdrop-filter:blur(10px);
+  border-radius:20px;padding:36px 40px;box-shadow:0 10px 30px rgba(0,0,0,.22);
+}
+
+/* header */
+.r-header{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.r-name{font-size:clamp(20px,3vw,30px);font-weight:700;margin:0 0 4px;letter-spacing:.3px}
+.r-role{font-size:14px;color:var(--muted);margin:0 0 14px;line-height:1.5}
+.r-contacts{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12.5px;color:var(--muted)}
+.r-contacts a{color:var(--accent);text-decoration:none}
+.r-contacts a:hover{text-decoration:underline}
+
+/* section */
+.r-section{margin-top:26px}
+.r-section-title{
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);
+  margin:0 0 14px;padding-bottom:6px;border-bottom:1px solid rgba(122,167,255,.2);
+}
+
+/* summary */
+.r-summary{font-size:13.5px;color:var(--text);line-height:1.7;margin:0;opacity:.9}
+
+/* skills grid */
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.skill-group h4{margin:0 0 6px;font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.skill-tags{display:flex;flex-wrap:wrap;gap:6px}
+.skill-tag{
+  padding:4px 10px;border-radius:999px;border:1px solid var(--line);
+  background:rgba(255,255,255,.03);color:var(--text);font-size:12px;opacity:.85;
+}
+
+/* experience */
+.exp-item{margin-bottom:20px}
+.exp-item:last-child{margin-bottom:0}
+.exp-header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:4px;margin-bottom:4px}
+.exp-title{font-size:14.5px;font-weight:600;margin:0}
+.exp-company{font-size:13px;color:var(--accent);margin:0}
+.exp-period{font-size:12px;color:var(--muted);white-space:nowrap;margin-top:2px}
+.exp-list{margin:8px 0 0;padding:0 0 0 16px;font-size:13px;color:var(--text);opacity:.85;line-height:1.65}
+.exp-list li{margin-bottom:3px}
+
+/* projects */
+.proj-item{margin-bottom:18px}
+.proj-item:last-child{margin-bottom:0}
+.proj-name{font-size:14px;font-weight:600;margin:0 0 3px}
+.proj-sub{font-size:12px;color:var(--muted);margin:0 0 6px}
+.proj-list{margin:0;padding-left:16px;font-size:13px;color:var(--text);opacity:.85;line-height:1.65}
+.proj-list li{margin-bottom:3px}
+
+/* education */
+.edu-item{font-size:13.5px;line-height:1.6}
+.edu-item strong{font-size:14.5px;display:block;margin-bottom:2px}
+.edu-item span{color:var(--muted);font-size:12.5px}
+
+/* certifications */
+.cert-group{margin-bottom:16px}
+.cert-group:last-child{margin-bottom:0}
+.cert-group h4{font-size:12px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px}
+.cert-list{margin:0;padding-left:16px;font-size:13px;color:var(--text);opacity:.85;line-height:1.7}
+
+/* declaration */
+.r-declaration{
+  margin-top:26px;padding:14px 18px;border-radius:12px;
+  border:1px solid var(--line);background:rgba(255,255,255,.02);
+  font-size:12.5px;color:var(--muted);line-height:1.55;
+}
+
+/* print */
+@media print{
+  body{background:#fff;color:#111}
+  .topbar{display:none}
+  .resume-card{border:none;background:transparent;backdrop-filter:none;box-shadow:none;padding:0}
+  .r-section-title{color:#1a1a2e;border-bottom-color:#ccc}
+  .r-contacts a{color:#1a5fa8}
+  .exp-company{color:#1a5fa8}
+  .skill-tag{border-color:#ddd;background:transparent;color:#333}
+  .exp-list,.proj-list,.cert-list{color:#333}
+  .r-declaration{border-color:#ddd;color:#666;background:transparent}
+  .r-summary,.r-role,.edu-item{color:#333}
+  :root{--muted:#666}
+  a{color:#1a5fa8}
+}
+@media(max-width:700px){
+  .resume-card{padding:24px 20px}
+  .skills-grid{grid-template-columns:1fr}
+}
+</style></head><body>
+<div class="wrap">
+  <div class="topbar">
+    <p class="back" style="margin:0"><a href="./index.html">← Back</a></p>
+    <div class="actions">
+      <a class="btn" href="./contact.html">Hire Me →</a>
+      <button class="btn btn--primary" onclick="window.print()">⬇ Download PDF</button>
+    </div>
+  </div>
+
+  <div class="resume-card">
+
+    <!-- Header -->
+    <div class="r-header">
+      <p class="r-name">MD. ASAFUDDAULA SOBAHANI SHOUNAK</p>
+      <p class="r-role">Senior Unity Developer &amp; Team Lead<br/>Medical Simulation · Digital Twins · XR (VR/AR) · ECS/DOTS · Simulation Authoring &amp; Workflow Automation</p>
+      <div class="r-contacts">
+        <span>Dhaka, Bangladesh</span>
+        <a href="mailto:shounak00@gmail.com">shounak00@gmail.com</a>
+        <a href="tel:+8801308542586">+880-1308542586</a>
+        <a href="https://www.linkedin.com/in/shounak00" target="_blank">linkedin.com/in/shounak00</a>
+        <a href="https://github.com/shounak00" target="_blank">github.com/shounak00</a>
+        <a href="https://shounak00.github.io/me" target="_blank">shounak00.github.io/me</a>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="r-section">
+      <p class="r-section-title">Professional Summary</p>
+      <p class="r-summary">Senior Unity Developer and Team Lead with 5+ years of professional experience delivering high-performance Unity applications across medical simulation, digital twins, and XR training systems. Expert in Unity ECS (DOTS), data-oriented design, and simulation authoring &amp; workflow automation. Proven ability to lead engineering teams, architect scalable systems, and ship enterprise healthcare solutions and consumer products with millions of users.</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="r-section">
+      <p class="r-section-title">Core Technical Skills</p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Unity / XR / Simulation</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Unity Engine (URP, XR Toolkit)</span>
+            <span class="skill-tag">Unity ECS / DOTS</span>
+            <span class="skill-tag">Addressables</span>
+            <span class="skill-tag">Simulation Authoring</span>
+            <span class="skill-tag">Workflow Automation</span>
+            <span class="skill-tag">Medical Simulation</span>
+            <span class="skill-tag">VR / AR (Meta Quest 2/3)</span>
+            <span class="skill-tag">Digital Twins</span>
+            <span class="skill-tag">Multiplayer Systems</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Programming / Backend / Tools</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">C# / .NET / ASP.NET Core</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">xAPI / LRS / LMS</span>
+            <span class="skill-tag">IIS Deployment</span>
+            <span class="skill-tag">Android Build Management</span>
+            <span class="skill-tag">Performance Optimization</span>
+            <span class="skill-tag">Git / Jira / Agile / Scrum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="r-section">
+      <p class="r-section-title">Professional Experience</p>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <p class="exp-title">Senior Unity Developer (Lead)</p>
+            <p class="exp-company">Talent Pro</p>
+          </div>
+          <span class="exp-period">June 2024 – Present</span>
+        </div>
+        <ul class="exp-list">
+          <li>Lead Unity development for enterprise-grade medical simulation and XR training platforms.</li>
+          <li>Architect ECS-driven systems for scalable scenario execution, assessment logic, and performance-critical workflows.</li>
+          <li>Design simulation authoring and workflow automation tools enabling non-technical SMEs to create training scenarios.</li>
+          <li>Develop VR medical training applications using Meta Quest 3.</li>
+          <li>Integrate xAPI and Learning Record Stores (LRS) for learner analytics and performance tracking.</li>
+          <li>Mentor Unity engineers and define engineering standards.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <p class="exp-title">Senior Unity Developer</p>
+            <p class="exp-company">Ghost Interactive</p>
+          </div>
+          <span class="exp-period">February 2022 – May 2024</span>
+        </div>
+        <ul class="exp-list">
+          <li>Shipped Unity products with a combined 1M+ downloads.</li>
+          <li>Designed ECS-inspired architectures for gameplay and simulation systems.</li>
+          <li>Built internal development tools to improve content production and QA efficiency.</li>
+          <li>Optimized rendering, physics, and memory usage across mobile and PC platforms.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <p class="exp-title">Junior Software Engineer (Game)</p>
+            <p class="exp-company">Toontech (Games4Life)</p>
+          </div>
+          <span class="exp-period">March 2021 – January 2022</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <p class="exp-title">Junior Game Developer</p>
+            <p class="exp-company">Technomagic Pvt Ltd</p>
+          </div>
+          <span class="exp-period">September 2020 – February 2021</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="r-section">
+      <p class="r-section-title">Key Projects</p>
+
+      <div class="proj-item">
+        <p class="proj-name">SIT CPREP – Clinical Preparedness E-Learning Program</p>
+        <p class="proj-sub">Singapore Institute of Technology</p>
+        <ul class="proj-list">
+          <li>Developed real-world medical simulation scenarios for radiographers and physiotherapists.</li>
+          <li>Implemented ECS-inspired architectures for scenario flow, assessment, and state management.</li>
+          <li>Built simulation authoring and workflow automation tools to support rapid content creation.</li>
+          <li>Integrated LMS and Learning Record Store (xAPI) for analytics-driven healthcare training.</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name">JLG Crane – Digital Twin (VR)</p>
+        <ul class="proj-list">
+          <li>Developed a VR-based digital twin enabling real-time crane operation and training.</li>
+          <li>Implemented system-driven simulation logic for interaction, physics coordination, and safety validation.</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name">Bus Simulator BD (BSBD) — 2M+ Downloads</p>
+        <ul class="proj-list">
+          <li>Optimized vehicle physics and rendering for low-end Android devices.</li>
+          <li>Contributed to scalable gameplay systems and long-term performance stability.</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name">Trench Warfare — 1M+ Downloads &nbsp;|&nbsp; The Rem — 500K+ Downloads &nbsp;|&nbsp; AlexanderBall: A Countryball Tale (Steam)</p>
+        <ul class="proj-list">
+          <li>WW1 strategy game with AI-driven gameplay systems; horror survival with modular architecture; large-scale simulation with optimized pathfinding.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="r-section">
+      <p class="r-section-title">Education</p>
+      <div class="edu-item">
+        <strong>Bachelor of Science (B.Sc.) in Computer Science &amp; Engineering</strong>
+        Jahangirnagar University, Bangladesh
+        <span>CGPA: 3.17 / 4.00</span>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="r-section">
+      <p class="r-section-title">Certifications</p>
+
+      <div class="cert-group">
+        <h4>University &amp; Core Game Development (Coursera)</h4>
+        <ul class="cert-list">
+          <li>Game Design and Development Specialization – Michigan State University &nbsp;<em style="color:var(--muted);font-size:11px">XU38U23UKCJ7</em></li>
+          <li>Game Design and Development Capstone – Michigan State University &nbsp;<em style="color:var(--muted);font-size:11px">6JK5C8D2GZJE</em></li>
+          <li>Game Development for Modern Platforms – Michigan State University &nbsp;<em style="color:var(--muted);font-size:11px">29R5UU7GYP9K</em></li>
+          <li>Business of Games and Entrepreneurship – Michigan State University &nbsp;<em style="color:var(--muted);font-size:11px">FF3ZL86FX83H</em></li>
+          <li>Principles of Game Design – Michigan State University &nbsp;<em style="color:var(--muted);font-size:11px">PYETUSBA38N7</em></li>
+          <li>Introduction to Game Development – Michigan State University &nbsp;<em style="color:var(--muted);font-size:11px">VDRKD7ZZETCQ</em></li>
+          <li>Introduction to C# Programming and Unity – University of Colorado &nbsp;<em style="color:var(--muted);font-size:11px">HJPFVFPQYFBU</em></li>
+          <li>More C# Programming and Unity – University of Colorado &nbsp;<em style="color:var(--muted);font-size:11px">CFHP556LERX8</em></li>
+        </ul>
+      </div>
+
+      <div class="cert-group">
+        <h4>Unity / XR / AR</h4>
+        <ul class="cert-list">
+          <li>Unity and C# Basics – Meta &nbsp;<em style="color:var(--muted);font-size:11px">KHFYXRKUGYL3</em></li>
+          <li>Unity Essentials – Unity</li>
+          <li>Unity: Building VR User Interfaces – LinkedIn Learning</li>
+          <li>Unity: Integrating GPS and Points of Interest – LinkedIn Learning</li>
+          <li>AR Development Techniques 01: Basic Concepts – LinkedIn Learning</li>
+          <li>AR Development Techniques 02: Lighting and Physics – LinkedIn Learning</li>
+          <li>Unity Medical Visualization – LinkedIn Learning</li>
+          <li>Unity: Interactivity for AEC – LinkedIn Learning</li>
+        </ul>
+      </div>
+
+      <div class="cert-group">
+        <h4>AI / Generative AI</h4>
+        <ul class="cert-list">
+          <li>Build Your Generative AI Productivity Skills – Microsoft &amp; LinkedIn</li>
+          <li>Claude Code in Action – Anthropic</li>
+          <li>Introduction to Generative AI – Google &nbsp;<em style="color:var(--muted);font-size:11px">8336900</em></li>
+        </ul>
+      </div>
+
+      <div class="cert-group">
+        <h4>Agile / Software Practices</h4>
+        <ul class="cert-list">
+          <li>Agile Foundations – LinkedIn Learning</li>
+          <li>Scrum: The Basics – LinkedIn Learning</li>
+          <li>Agile Project Management with Jira Cloud (Projects, Boards, Processes)</li>
+        </ul>
+      </div>
+
+      <div class="cert-group">
+        <h4>Industry &amp; Government</h4>
+        <ul class="cert-list">
+          <li>Intel Edge AI Scholarship – OpenVINO Fundamentals – Intel Corporation</li>
+          <li>Training for Mobile Application Developer (iOS) – ICT Division, Bangladesh &nbsp;<em style="color:var(--muted);font-size:11px">L1A-B-30-0-37</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Declaration -->
+    <div class="r-declaration">
+      I hereby declare that all the information provided above is true, complete, and accurate to the best of my knowledge and belief.
+    </div>
+
+  </div>
+</div>
+</body></html>
