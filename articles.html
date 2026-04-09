@@ -1,1 +1,167 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Shounak Sobahani</title><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><p><a href="../../index.html">← Back</a></p><h1>Coming soon</h1></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><title>Articles – Shounak Sobahani</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>
+:root{
+  --bg:#0b0f17;--card:#0f1623;--text:#e7eefc;--muted:#a9b6d3;
+  --line:rgba(255,255,255,.08);--btn:#172238;--btnHover:#1f2d4a;--accent:#7aa7ff;--accent2:#7affce;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Helvetica Neue",Helvetica,sans-serif;background:radial-gradient(1200px 600px at 20% -10%,rgba(122,167,255,.25),transparent 60%),radial-gradient(1000px 600px at 80% 10%,rgba(122,255,211,.14),transparent 60%),var(--bg);color:var(--text);line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:28px 18px 80px}
+.back a{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--muted);border:1px solid var(--line);padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.03);transition:.18s ease;font-size:14px}
+.back a:hover{color:var(--text);border-color:rgba(122,167,255,.35)}
+.hero{margin:36px 0 32px}
+.hero .badge{display:inline-block;margin-bottom:14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(122,167,255,.28);padding:5px 12px;border-radius:999px;background:rgba(122,167,255,.07)}
+.hero h1{margin:0 0 8px;font-size:clamp(26px,3.5vw,42px);letter-spacing:.3px}
+.hero p{margin:0;color:var(--muted);font-size:15px;max-width:540px;line-height:1.65}
+
+/* Article card (index) */
+.article-card{border:1px solid var(--line);background:rgba(15,22,35,.72);backdrop-filter:blur(10px);border-radius:20px;padding:28px 30px;box-shadow:0 10px 30px rgba(0,0,0,.22);margin-bottom:18px;transition:.2s ease;text-decoration:none;display:block;color:var(--text)}
+.article-card:hover{border-color:rgba(122,167,255,.3);transform:translateY(-2px);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.article-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+.article-tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1px solid rgba(122,167,255,.25);background:rgba(122,167,255,.07);color:var(--accent)}
+.article-date{font-size:12px;color:var(--muted)}
+.article-title{font-size:clamp(17px,2.2vw,22px);font-weight:700;margin:0 0 10px;letter-spacing:.1px;line-height:1.3}
+.article-excerpt{font-size:14px;color:var(--muted);margin:0 0 16px;line-height:1.65;max-width:680px}
+.article-read{font-size:13px;color:var(--accent);font-weight:600}
+
+/* Full article */
+.article-full{border:1px solid var(--line);background:rgba(15,22,35,.72);backdrop-filter:blur(10px);border-radius:20px;padding:36px 40px;box-shadow:0 10px 30px rgba(0,0,0,.22)}
+.af-badge{display:inline-block;margin-bottom:16px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(122,167,255,.28);padding:5px 12px;border-radius:999px;background:rgba(122,167,255,.07)}
+.af-title{font-size:clamp(20px,3vw,30px);font-weight:700;margin:0 0 14px;line-height:1.25;letter-spacing:.1px}
+.af-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.af-meta strong{color:var(--text)}
+.af-body{font-size:15px;line-height:1.8;color:rgba(231,238,252,.9)}
+.af-body h2{font-size:18px;font-weight:700;margin:36px 0 12px;color:var(--text);letter-spacing:.1px}
+.af-body h3{font-size:15px;font-weight:700;margin:24px 0 8px;color:var(--accent)}
+.af-body p{margin:0 0 16px}
+.af-body ul{margin:0 0 16px;padding-left:20px}
+.af-body li{margin-bottom:6px}
+.af-body strong{color:var(--text);font-weight:600}
+.af-body hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.af-body em{color:var(--muted)}
+.af-tags{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px}
+.af-tag{font-size:12px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted)}
+.af-cta{margin-top:24px;padding:18px 22px;border-radius:14px;border:1px solid rgba(122,167,255,.2);background:rgba(122,167,255,.05);font-size:14px;color:var(--muted);line-height:1.6}
+.af-cta a{color:var(--accent);text-decoration:none;font-weight:600}
+.af-cta a:hover{text-decoration:underline}
+@media(max-width:680px){.article-full{padding:24px 20px}}
+</style></head><body>
+<div class="wrap">
+  <p class="back"><a href="./index.html">← Back</a></p>
+
+  <div class="hero">
+    <div class="badge">Articles</div>
+    <h1>Writing</h1>
+    <p>Technical writing on simulation, XR development, and the engineering decisions behind real projects.</p>
+  </div>
+
+  <!-- Article full view -->
+  <div class="article-full">
+    <div class="af-badge">Medical Simulation · Unity · ECS · xAPI</div>
+    <h1 class="af-title">How We Built a Medical Simulation Platform That Lets Clinicians Create Training Scenarios Without Writing a Single Line of Code</h1>
+    <div class="af-meta">
+      <span><strong>Shounak Sobahani</strong></span>
+      <span>Senior Unity Developer &amp; Team Lead</span>
+      <span>2024</span>
+      <span>10 min read</span>
+    </div>
+
+    <div class="af-body">
+
+      <p>Healthcare professionals are expected to respond confidently in high-stakes situations, but they cannot practice on real patients.</p>
+      <p>That is the problem we set out to solve when a university in Singapore contracted our team to build a clinical preparedness e-learning platform for their allied health departments. I led the Unity development effort end to end, working as part of a distributed engineering team across South and Southeast Asia.</p>
+      <p>The result is a simulation platform now actively used for healthcare training. Here is how we built it, the technical decisions that made it work, and what I learned leading the project.</p>
+
+      <hr/>
+
+      <h2>The problem: clinical training does not scale</h2>
+      <p>Traditional clinical training has a bottleneck. Simulation labs are expensive. Scheduling is rigid. And every time a clinical scenario needs to change — a new protocol, a different patient presentation — someone has to rebuild it from scratch.</p>
+      <p>The client needed a system where:</p>
+      <ul>
+        <li>Students practice realistic clinical scenarios on any device, anytime</li>
+        <li>Faculty create and modify training content without depending on developers</li>
+        <li>Learner performance is tracked with granular data, not just pass/fail</li>
+        <li>The platform scales across multiple departments</li>
+      </ul>
+
+      <hr/>
+
+      <h2>The solution: a simulation platform with a built-in authoring engine</h2>
+      <p>We did not just build a set of training scenarios. We built a system for creating training scenarios.</p>
+      <p>The architecture has three layers:</p>
+
+      <h3>1. Simulation engine (Unity, ECS-inspired architecture)</h3>
+      <p>The core simulation runs on Unity with an ECS-inspired architecture that separates scenario logic from content. This means the same engine powers radically different clinical situations without rewriting code.</p>
+      <p>Why ECS-inspired? Because medical scenarios are essentially state machines with assessment checkpoints. Each scenario has entities (patient, equipment, environment), systems (vital sign progression, timer logic, assessment scoring), and components (symptoms, responses, procedural steps). This separation made the system modular and testable.</p>
+
+      <h3>2. Authoring and workflow automation tools</h3>
+      <p>This is where the real leverage lives.</p>
+      <p>Clinical subject matter experts are not programmers. But they are the ones who know what a training scenario should look like. So we built a visual authoring system where SMEs can:</p>
+      <ul>
+        <li>Define scenario flow (patient presentation, student actions, branching outcomes)</li>
+        <li>Set assessment criteria and scoring rubrics</li>
+        <li>Configure patient parameters (vitals, symptoms, progression)</li>
+        <li>Preview and test scenarios before publishing</li>
+      </ul>
+      <p>The result: content production cycle time dropped by over 40%. Faculty who previously waited weeks for a developer to build a scenario could now create one in hours.</p>
+
+      <h3>3. Analytics pipeline (xAPI + Learning Record Store)</h3>
+      <p>Every student interaction generates structured data via the xAPI standard. This flows into a Learning Record Store, giving faculty granular visibility into:</p>
+      <ul>
+        <li>Which clinical decisions students get right (and wrong)</li>
+        <li>Where students hesitate or repeat steps</li>
+        <li>Performance trends across cohorts</li>
+        <li>Time-to-completion patterns</li>
+      </ul>
+      <p>This turns training from "did they pass?" into "where exactly are they struggling, and how do we fix it?"</p>
+
+      <hr/>
+
+      <h2>The VR extension: taking simulation into 3D space</h2>
+      <p>We also developed a VR proof-of-concept for Meta Quest, extending the platform into immersive 3D clinical environments. The VR module lets students physically interact with medical equipment and patients in virtual space, practicing procedures that are difficult to replicate in a flat 2D interface.</p>
+
+      <hr/>
+
+      <h2>Technical decisions that mattered</h2>
+      <p>A few choices that I would make again:</p>
+      <p><strong>Separating content from logic.</strong> The ECS-inspired architecture paid for itself many times over. When the client wanted to add new department scenarios to a system originally built for a single department, we did not rewrite anything. We authored new content on the existing engine.</p>
+      <p><strong>Investing in tooling early.</strong> It is tempting to hand-build the first 10 scenarios and "build tools later." We built the authoring system first. That 40% cycle time reduction compounded with every scenario created after launch.</p>
+      <p><strong>xAPI over custom analytics.</strong> Using an open standard for learner data meant the client could integrate with their existing LMS ecosystem without custom middleware. Interoperability matters when you are building for institutions.</p>
+      <p><strong>Unity for enterprise simulation.</strong> Unity is often seen as "just for games." But its rendering pipeline, cross-platform deployment (WebGL for browser access, VR for immersive training), and mature ecosystem made it the right choice for healthcare simulation that needs to run everywhere.</p>
+      <p><strong>Distributed teams can deliver enterprise work.</strong> Our engineering team operated across multiple countries, collaborating daily with the client's Singapore-based team. Tight communication, shared coding standards, and clear ownership boundaries made it work.</p>
+
+      <hr/>
+
+      <h2>What I learned</h2>
+      <p><strong>The hardest engineering problem was not technical. It was empathy.</strong> Understanding how a clinician thinks about patient assessment, what an instructor considers a "correct" decision, and how to translate that clinical knowledge into software logic. The best architecture in the world is useless if it does not model the right domain.</p>
+      <p><strong>Tools are a multiplier.</strong> Every hour spent building the authoring system saved hundreds of hours of scenario development downstream. If you are building any content-heavy platform, invest in creator tools early.</p>
+      <p><strong>Healthcare simulation is where games engineering shines.</strong> State machines, real-time interaction, performance optimization, user experience under pressure. These are game development fundamentals applied to a domain where the stakes are real.</p>
+      <p><strong>Geography is not a barrier to quality.</strong> Working from Bangladesh on a platform used by a university in Singapore, we were embedded in the workflow, not bolted on. Daily standups, shared boards, joint code reviews. The time zones were different but the engineering culture was unified.</p>
+
+      <hr/>
+
+      <h2>The bigger picture</h2>
+      <p>Medical simulation training has been shown to reduce errors and improve clinical confidence. But access remains unequal: expensive simulation labs, limited scheduling, rigid content that cannot keep pace with evolving clinical practice.</p>
+      <p>Platforms like the one we built point toward a future where clinical training is accessible, adaptive, and data-driven. Where the people who know medicine best can create the training, and where every learner's journey generates insights that make the next learner's training better.</p>
+      <p>I am proud of what our team built across borders and a shared mission. And I am excited about where healthcare simulation is heading.</p>
+
+      <div class="af-tags">
+        <span class="af-tag">#medicalsimulation</span>
+        <span class="af-tag">#healthcareinnovation</span>
+        <span class="af-tag">#unity3d</span>
+        <span class="af-tag">#XR</span>
+        <span class="af-tag">#elearning</span>
+        <span class="af-tag">#gamedev</span>
+        <span class="af-tag">#clinicaltraining</span>
+        <span class="af-tag">#edtech</span>
+        <span class="af-tag">#VR</span>
+      </div>
+
+      <div class="af-cta">
+        If you are working on simulation, XR training, or healthcare technology, I would love to connect. <a href="./contact.html">Get in touch →</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body></html>
