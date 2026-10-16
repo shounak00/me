@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="575.364844pt" height="209.883346pt" viewBox="0 0 575.364844 209.883346" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-17T01:56:58.874082</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 209.883346 
+L 575.364844 209.883346 
+L 575.364844 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 10.164844 175.708375 
+L 568.164844 175.708375 
+L 568.164844 31.564375 
+L 10.164844 31.564375 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 10.164844 169.156375 
+L 60.892116 169.156375 
+L 60.892116 38.116375 
+L 10.164844 38.116375 
+z
+" clip-path="url(#pc565f633e7)" style="fill: #e5e7eb"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 60.892116 169.156375 
+L 145.437571 169.156375 
+L 145.437571 38.116375 
+L 60.892116 38.116375 
+z
+" clip-path="url(#pc565f633e7)" style="fill: #9ca3af"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 145.437571 169.156375 
+L 297.619389 169.156375 
+L 297.619389 38.116375 
+L 145.437571 38.116375 
+z
+" clip-path="url(#pc565f633e7)" style="fill: #2563eb"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 297.619389 169.156375 
+L 361.02848 169.156375 
+L 361.02848 38.116375 
+L 297.619389 38.116375 
+z
+" clip-path="url(#pc565f633e7)" style="fill: #7c3aed"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 361.02848 169.156375 
+L 475.164844 169.156375 
+L 475.164844 38.116375 
+L 361.02848 38.116375 
+z
+" clip-path="url(#pc565f633e7)" style="fill: #16a34a"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="10.164844" y="187.216676" transform="rotate(-0 10.164844 187.216676)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="94.710298" y="187.216676" transform="rotate(-0 94.710298 187.216676)">2</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="179.255753" y="187.216676" transform="rotate(-0 179.255753 187.216676)">4</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="263.801207" y="187.216676" transform="rotate(-0 263.801207 187.216676)">6</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="348.346662" y="187.216676" transform="rotate(-0 348.346662 187.216676)">8</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="432.892116" y="187.216676" transform="rotate(-0 432.892116 187.216676)">10</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7"/>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="517.437571" y="187.216676" transform="rotate(-0 517.437571 187.216676)">12</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="289.164844" y="200.447877" transform="rotate(-0 289.164844 200.447877)">GPU memory (GB)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="line2d_8">
+    <path d="M 517.437571 175.708375 
+L 517.437571 31.564375 
+" clip-path="url(#pc565f633e7)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #dc2626; stroke-width: 1.5"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 10.164844 175.708375 
+L 568.164844 175.708375 
+" style="fill: none; stroke: #e5e7eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(19.065511 101.118572)">Desktop</text>
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(22.801214 110.922947)">1.2 GB</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(91.558359 101.151268)">Game</text>
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(90.437578 110.779686)">2.0 GB</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(187.65473 101.094666)">Whisper large-v3</text>
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(208.801214 110.946854)">3.6 GB</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(304.958544 101.254363)">NLP fallback</text>
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(316.596669 110.882781)">1.5 GB</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(385.662209 101.151268)">LLM (Qwen3 4B)</text>
+    <text style="font-size: 9px; font-family: 'Segoe UI'; fill: #ffffff" transform="translate(405.369396 110.779686)">2.7 GB</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'Segoe UI'; text-anchor: start; fill: #dc2626" x="519.551207" y="17.149975" transform="rotate(-0 519.551207 17.149975)">12 GB card</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 600; font-size: 14px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="10.164844" y="17.564375" transform="rotate(-0 10.164844 17.564375)">Everything on one 12 GB GPU: ~11.0 GB planned, 10.0 GB measured in use</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc565f633e7">
+   <rect x="10.164844" y="31.564375" width="558" height="144.144"/>
+  </clipPath>
+ </defs>
+</svg>

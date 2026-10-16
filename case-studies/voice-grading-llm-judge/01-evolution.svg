@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="213.984pt" viewBox="0 0 684 213.984" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-17T01:56:57.019952</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 213.984 
+L 684 213.984 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 21.15 152.4528 
+L 121.59 152.4528 
+Q 128.286 152.4528 128.286 145.8 
+L 128.286 59.868 
+Q 128.286 53.2152 121.59 53.2152 
+L 21.15 53.2152 
+Q 14.454 53.2152 14.454 59.868 
+L 14.454 145.8 
+Q 14.454 152.4528 21.15 152.4528 
+z
+" clip-path="url(#p03e6590409)" style="fill: #f3f4f6; stroke: #9ca3af; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 131.398321 102.834 
+Q 138.885275 102.834 144.806982 102.834 
+" clip-path="url(#p03e6590409)" style="fill: none; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 139.206982 100.034 
+L 144.806982 102.834 
+L 139.206982 105.634 
+z
+" clip-path="url(#p03e6590409)" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 156.186 152.4528 
+L 256.626 152.4528 
+Q 263.322 152.4528 263.322 145.8 
+L 263.322 59.868 
+Q 263.322 53.2152 256.626 53.2152 
+L 156.186 53.2152 
+Q 149.49 53.2152 149.49 59.868 
+L 149.49 145.8 
+Q 149.49 152.4528 156.186 152.4528 
+z
+" clip-path="url(#p03e6590409)" style="fill: #eff6ff; stroke: #2563eb; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 266.434321 102.834 
+Q 273.921275 102.834 279.842982 102.834 
+" clip-path="url(#p03e6590409)" style="fill: none; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 274.242982 100.034 
+L 279.842982 102.834 
+L 274.242982 105.634 
+z
+" clip-path="url(#p03e6590409)" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 291.222 152.4528 
+L 391.662 152.4528 
+Q 398.358 152.4528 398.358 145.8 
+L 398.358 59.868 
+Q 398.358 53.2152 391.662 53.2152 
+L 291.222 53.2152 
+Q 284.526 53.2152 284.526 59.868 
+L 284.526 145.8 
+Q 284.526 152.4528 291.222 152.4528 
+z
+" clip-path="url(#p03e6590409)" style="fill: #eff6ff; stroke: #2563eb; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 401.470321 102.834 
+Q 408.957275 102.834 414.878982 102.834 
+" clip-path="url(#p03e6590409)" style="fill: none; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 409.278982 100.034 
+L 414.878982 102.834 
+L 409.278982 105.634 
+z
+" clip-path="url(#p03e6590409)" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 426.258 152.4528 
+L 526.698 152.4528 
+Q 533.394 152.4528 533.394 145.8 
+L 533.394 59.868 
+Q 533.394 53.2152 526.698 53.2152 
+L 426.258 53.2152 
+Q 419.562 53.2152 419.562 59.868 
+L 419.562 145.8 
+Q 419.562 152.4528 426.258 152.4528 
+z
+" clip-path="url(#p03e6590409)" style="fill: #eff6ff; stroke: #2563eb; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 536.506321 102.834 
+Q 543.993275 102.834 549.914982 102.834 
+" clip-path="url(#p03e6590409)" style="fill: none; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 544.314982 100.034 
+L 549.914982 102.834 
+L 544.314982 105.634 
+z
+" clip-path="url(#p03e6590409)" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 561.294 152.4528 
+L 661.734 152.4528 
+Q 668.43 152.4528 668.43 145.8 
+L 668.43 59.868 
+Q 668.43 53.2152 661.734 53.2152 
+L 561.294 53.2152 
+Q 554.598 53.2152 554.598 59.868 
+L 554.598 145.8 
+Q 554.598 152.4528 561.294 152.4528 
+z
+" clip-path="url(#p03e6590409)" style="fill: #ecfdf5; stroke: #16a34a; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(44.737109 88.017498)">Built-in OS</text>
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(26.474531 99.920702)">speech recogniser</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(41.211602 119.747351)">fixed phrase list,</text>
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(39.68957 129.111462)">exact match only</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 600; font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="71.37" y="32.148" transform="rotate(-0 71.37 32.148)">Before</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(171.435453 87.909969)">Local Whisper</text>
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(169.739047 100.028231)">large-v3 (GPU)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(177.011938 119.85302)">free text, offline</text>
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(177.142758 129.050949)">~1 s per phrase</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 600; font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="206.406" y="32.148" transform="rotate(-0 206.406 32.148)">Stage 1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(301.640906 87.945204)">Keyword checks</text>
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(307.231141 100.051434)">on transcripts</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(305.787156 119.724772)">normalised + fuzzy</text>
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(291.248836 129.13404)">numbers said digit by digit</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 600; font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="341.442" y="32.148" transform="rotate(-0 341.442 32.148)">Stage 2</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(442.589406 88.18658)">NLP semantic</text>
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(461.291125 99.954647)">scorer</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(438.409953 119.762707)">cross-encoder + NLI</text>
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(437.31757 129.050949)">13 ms, 78 % pass/fail</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 600; font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="476.478" y="32.148" transform="rotate(-0 476.478 32.148)">Stage 3</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(584.020016 87.915985)">LLM judge,</text>
+    <text style="font-weight: 600; font-size: 11px; font-family: 'Segoe UI'; fill: #1f2328" transform="translate(587.645719 100.022215)">in-engine</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(583.878375 119.762707)">local 4B model</text>
+    <text style="font-size: 8.5px; font-family: 'Segoe UI'; fill: #6b7280" transform="translate(585.650094 129.050949)">91 % pass/fail</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 600; font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="611.514" y="32.148" transform="rotate(-0 611.514 32.148)">Stage 4</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #6b7280" x="15.57" y="181.836" transform="rotate(-0 15.57 181.836)">Each stage was added next to the previous one without editing shared code; the final LLM judge falls back to the NLP scorer, then keywords.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p03e6590409">
+   <rect x="7.2" y="7.2" width="669.6" height="199.584"/>
+  </clipPath>
+ </defs>
+</svg>

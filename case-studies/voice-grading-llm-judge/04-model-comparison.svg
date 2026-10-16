@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="635.436641pt" height="307.611617pt" viewBox="0 0 635.436641 307.611617" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-17T01:56:57.876697</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 307.611617 
+L 635.436641 307.611617 
+L 635.436641 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 70.236641 286.588375 
+L 628.236641 286.588375 
+L 628.236641 31.564375 
+L 70.236641 31.564375 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 70.236641 286.588375 
+L 70.236641 31.564375 
+" clip-path="url(#pb83597bf64)" style="fill: none; stroke: #e5e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="70.236641" y="298.096676" transform="rotate(-0 70.236641 298.096676)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 197.054822 286.588375 
+L 197.054822 31.564375 
+" clip-path="url(#pb83597bf64)" style="fill: none; stroke: #e5e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="197.054822" y="298.096676" transform="rotate(-0 197.054822 298.096676)">25</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 323.873004 286.588375 
+L 323.873004 31.564375 
+" clip-path="url(#pb83597bf64)" style="fill: none; stroke: #e5e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="323.873004" y="298.096676" transform="rotate(-0 323.873004 298.096676)">50</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 450.691186 286.588375 
+L 450.691186 31.564375 
+" clip-path="url(#pb83597bf64)" style="fill: none; stroke: #e5e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="450.691186" y="298.096676" transform="rotate(-0 450.691186 298.096676)">75</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 577.509368 286.588375 
+L 577.509368 31.564375 
+" clip-path="url(#pb83597bf64)" style="fill: none; stroke: #e5e7eb; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'Segoe UI'; text-anchor: middle; fill: #6b7280" x="577.509368" y="298.096676" transform="rotate(-0 577.509368 298.096676)">100%</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_6">
+      <text style="font-size: 10.5px; font-family: 'Segoe UI'; text-anchor: end; fill: #1f2328" x="66.736641" y="62.621702" transform="rotate(-0 66.736641 62.621702)">Qwen3 4B</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_7">
+      <text style="font-size: 10.5px; font-family: 'Segoe UI'; text-anchor: end; fill: #1f2328" x="66.736641" y="102.732429" transform="rotate(-0 66.736641 102.732429)">Qwen3 8B</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 10.5px; font-family: 'Segoe UI'; text-anchor: end; fill: #1f2328" x="66.736641" y="142.907652" transform="rotate(-0 66.736641 142.907652)">Phi-4-mini</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_9">
+      <text style="font-size: 10.5px; font-family: 'Segoe UI'; text-anchor: end; fill: #1f2328" x="66.736641" y="182.953882" transform="rotate(-0 66.736641 182.953882)">Qwen3 1.7B</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font-size: 10.5px; font-family: 'Segoe UI'; text-anchor: end; fill: #1f2328" x="66.736641" y="223.129106" transform="rotate(-0 66.736641 223.129106)">Llama 3.2 3B</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_11">
+      <text style="font-size: 10.5px; font-family: 'Segoe UI'; text-anchor: end; fill: #1f2328" x="66.736641" y="263.239832" transform="rotate(-0 66.736641 263.239832)">NLP baseline</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 70.236641 58.398451 
+L 531.854822 58.398451 
+L 531.854822 43.156375 
+L 70.236641 43.156375 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #2563eb"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 70.236641 98.509178 
+L 536.92755 98.509178 
+L 536.92755 83.267102 
+L 70.236641 83.267102 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #2563eb"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 70.236641 138.619904 
+L 511.563913 138.619904 
+L 511.563913 123.377828 
+L 70.236641 123.377828 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #2563eb"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 70.236641 178.730631 
+L 430.400277 178.730631 
+L 430.400277 163.488555 
+L 70.236641 163.488555 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #2563eb"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 70.236641 218.841358 
+L 318.800277 218.841358 
+L 318.800277 203.599282 
+L 70.236641 203.599282 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #2563eb"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 70.236641 258.952084 
+L 465.909368 258.952084 
+L 465.909368 243.710008 
+L 70.236641 243.710008 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #9ca3af"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 70.236641 74.442742 
+L 80.382095 74.442742 
+L 80.382095 59.200666 
+L 70.236641 59.200666 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #dc2626; opacity: 0.85"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 70.236641 114.553468 
+L 131.109368 114.553468 
+L 131.109368 99.311392 
+L 70.236641 99.311392 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #dc2626; opacity: 0.85"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 70.236641 154.664195 
+L 161.545732 154.664195 
+L 161.545732 139.422119 
+L 70.236641 139.422119 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #dc2626; opacity: 0.85"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 70.236641 194.774922 
+L 242.709368 194.774922 
+L 242.709368 179.532846 
+L 70.236641 179.532846 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #dc2626; opacity: 0.85"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 70.236641 234.885648 
+L 577.509368 234.885648 
+L 577.509368 219.643572 
+L 70.236641 219.643572 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #dc2626; opacity: 0.85"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 70.236641 274.996375 
+L 263.000277 274.996375 
+L 263.000277 259.754299 
+L 70.236641 259.754299 
+z
+" clip-path="url(#pb83597bf64)" style="fill: #dc2626; opacity: 0.85"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 70.236641 286.588375 
+L 70.236641 31.564375 
+" style="fill: none; stroke: #e5e7eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="536.92755" y="53.235909" transform="rotate(-0 536.92755 53.235909)">91%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #dc2626" x="85.454822" y="69.2802" transform="rotate(-0 85.454822 69.2802)">2%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="542.000277" y="93.346636" transform="rotate(-0 542.000277 93.346636)">92%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #dc2626" x="136.182095" y="109.390926" transform="rotate(-0 136.182095 109.390926)">12%</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="516.636641" y="133.457362" transform="rotate(-0 516.636641 133.457362)">87%</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #dc2626" x="166.618459" y="149.501653" transform="rotate(-0 166.618459 149.501653)">18%</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="435.473004" y="173.568089" transform="rotate(-0 435.473004 173.568089)">71%</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #dc2626" x="247.782095" y="189.61238" transform="rotate(-0 247.782095 189.61238)">34%</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="323.873004" y="213.678816" transform="rotate(-0 323.873004 213.678816)">49%</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #dc2626" x="582.582095" y="229.723106" transform="rotate(-0 582.582095 229.723106)">100%</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="470.982095" y="253.789542" transform="rotate(-0 470.982095 253.789542)">78%</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #dc2626" x="268.073004" y="269.833833" transform="rotate(-0 268.073004 269.833833)">38%</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 600; font-size: 14px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="70.236641" y="17.564375" transform="rotate(-0 70.236641 17.564375)">Five local models vs the NLP baseline (235 labelled lines)</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_16">
+     <path d="M 496.715078 261.784469 
+L 515.715078 261.784469 
+L 515.715078 255.134469 
+L 496.715078 255.134469 
+z
+" style="fill: #2563eb"/>
+    </g>
+    <g id="text_25">
+     <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="523.315078" y="261.784469" transform="rotate(-0 523.315078 261.784469)">Pass/fail accuracy</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 496.715078 275.802906 
+L 515.715078 275.802906 
+L 515.715078 269.152906 
+L 496.715078 269.152906 
+z
+" style="fill: #dc2626; opacity: 0.85"/>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 9.5px; font-family: 'Segoe UI'; text-anchor: start; fill: #1f2328" x="523.315078" y="275.802906" transform="rotate(-0 523.315078 275.802906)">Wrong answers passed</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb83597bf64">
+   <rect x="70.236641" y="31.564375" width="558" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>
